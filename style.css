@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #F3DCC1;
+    --fox-color: #F5E3CC ;
+    --bee-color: #F5EEB6;
+    --turtle-color: #C7E4C1 ;
+    --spacing: 8px;
+    --font-size: 1rem;
+}
