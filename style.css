@@ -28,14 +28,31 @@
   background-color: var(--turtle-color);
   display: flex;
 }
+
+.wild-fox p {
+  animation: beer-paragraph-anim normal 1.5s ease;
+}
 .wild-fox img {
-  height: 350px;
-  width: 125px;
+  animation: beer-paragraph-anim normal 1.5s ease;
+  animation: beer-img-anim normal 1.5s ease;
+}
+
+.wild-turtle p {
+  animation: beer-paragraph-anim normal 1.5s ease;
+}
+.wild-turtle img {
+  animation: beer-img-anim normal 1.5s ease;
+}
+.wild-bee p {
+  animation: beer-paragraph-bee normal 1.5s ease;
+}
+.wild-bee img {
+  animation: beer-img-bee normal 1.5s ease;
 }
 
 .beer-presentation img {
-  height: 350px;
-  width: 125px;
+  height: 19rem;
+  width: 10rem;
   margin: 3rem;
 }
 .beer-presentation h2 {
@@ -53,4 +70,46 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgba(190, 189, 189, 0.521);
+  animation: anim 8s forwards;
+  opacity: 1;
+  filter: hue-rotate(0deg);
+  z-index: 0;
+}
+
+@keyframes beer-paragraph-anim {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+}
+@keyframes beer-img-anim {
+  from {
+    transform: translateX(-200px);
+  }
+}
+@keyframes beer-img-bee {
+  from {
+    transform: translateX(200px);
+  }
+}
+@keyframes beer-paragraph-bee {
+  from {
+    transform: translateX(-400px);
+  }
+}
+
+@keyframes anim {
+  to {
+    top: -250px;
+    opacity: 1;
+    filter: hue-rotate(720deg);
+    left: var(--left);
+    right: var(--right);
+  }
 }
