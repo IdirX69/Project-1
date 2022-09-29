@@ -1,3 +1,5 @@
+//section Beer presentation start
+
 const bubbleMaker = () => {
   const bubble = document.createElement("span");
   bubble.classList.add("bubble");
@@ -16,3 +18,5 @@ const bubbleMaker = () => {
   }, 8000);
 };
 setInterval(bubbleMaker, 200);
+
+//Section beer presentation end

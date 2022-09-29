@@ -17,15 +17,15 @@
 .wild-fox {
   display: flex;
 
-  background-color: var(--fox-color);
+  background: linear-gradient(var(--main-color), var(--fox-color));
 }
 .wild-bee {
   display: flex;
   flex-direction: row-reverse;
-  background-color: var(--bee-color);
+  background: linear-gradient(var(--fox-color), var(--bee-color));
 }
 .wild-turtle {
-  background-color: var(--turtle-color);
+  background: linear-gradient(var(--bee-color), var(--turtle-color));
   display: flex;
 }
 
@@ -33,32 +33,33 @@
   animation: beer-paragraph-anim normal 1.5s ease;
 }
 .wild-fox img {
-  animation: beer-paragraph-anim normal 1.5s ease;
-  animation: beer-img-anim normal 1.5s ease;
+  animation: beer-img-anim normal 1.5s forwards;
 }
 
 .wild-turtle p {
   animation: beer-paragraph-anim normal 1.5s ease;
 }
 .wild-turtle img {
-  animation: beer-img-anim normal 1.5s ease;
+  animation: beer-img-anim initial 1.5s forwards;
 }
 .wild-bee p {
   animation: beer-paragraph-bee normal 1.5s ease;
 }
 .wild-bee img {
-  animation: beer-img-bee normal 1.5s ease;
+  animation: beer-img-bee normal 1.5s forwards;
 }
 
 .beer-presentation img {
-  height: 19rem;
-  width: 10rem;
-  margin: 3rem;
+  height: 23rem;
+  width: 8rem;
+  margin: 2.5rem;
 }
 .beer-presentation h2 {
+  line-height: 2rem;
   font-size: 2rem;
 }
 .beer-presentation p {
+  margin-top: 1rem;
   height: 300px;
   width: 120px;
   font-size: 1.1rem;
@@ -66,7 +67,8 @@
   line-height: 1.6rem;
 }
 .beer-presentation div {
-  margin-top: 2rem;
+  background-color: rgba(117, 100, 100, 0.144);
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -75,10 +77,9 @@
 .bubble {
   position: absolute;
   border-radius: 10px;
-  background-color: rgba(190, 189, 189, 0.521);
-  animation: anim 8s forwards;
+  background-color: rgba(190, 189, 189, 0.664);
+  animation: anim 5s forwards;
   opacity: 1;
-  filter: hue-rotate(0deg);
   z-index: 0;
 }
 
@@ -108,8 +109,6 @@
   to {
     top: -250px;
     opacity: 1;
-    filter: hue-rotate(720deg);
     left: var(--left);
-    right: var(--right);
   }
 }
