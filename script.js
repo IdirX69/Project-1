@@ -1,4 +1,20 @@
-//section Beer presentation start
+//section beer presentation start
+const turtleImg = document.querySelector(".turtle-img");
+const turtleP = document.querySelector(".turtle-paragraph");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    turtleP.style.animation = "beer-paragraph-anim normal 2s forwards";
+  } else {
+    turtleP.style.animation = "none";
+  }
+
+  if (window.scrollY > 100) {
+    turtleImg.style.animation = "beer-anim normal 2s forwards";
+  } else {
+    turtleImg.style.animation = "none";
+  }
+});
 
 const bubbleMaker = () => {
   const bubble = document.createElement("span");

@@ -36,17 +36,14 @@
   animation: beer-img-anim normal 1.5s forwards;
 }
 
-.wild-turtle p {
-  animation: beer-paragraph-anim normal 1.5s ease;
+.turtle-paragraph {
+  transform: translateX(180px);
 }
-.wild-turtle img {
-  animation: beer-img-anim initial 1.5s forwards;
+.turtle-img {
+  transform: translateX(-160px);
 }
 .wild-bee p {
   animation: beer-paragraph-bee normal 1.5s ease;
-}
-.wild-bee img {
-  animation: beer-img-bee normal 1.5s forwards;
 }
 
 .beer-presentation img {
@@ -57,14 +54,15 @@
 .beer-presentation h2 {
   line-height: 2rem;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 .beer-presentation p {
-  margin-top: 1rem;
+  font-family: Quicksand;
   height: 300px;
   width: 120px;
   font-size: 1.1rem;
   text-align: left;
-  line-height: 1.6rem;
+  line-height: 1.4rem;
 }
 .beer-presentation div {
   background-color: rgba(117, 100, 100, 0.144);
@@ -72,6 +70,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.wild-turtle div {
+  padding-right: 180px;
 }
 
 .bubble {
@@ -85,8 +86,10 @@
 
 @keyframes beer-paragraph-anim {
   from {
-    transform: translateX(400px);
-    opacity: 0;
+    transform: translateX(180px);
+  }
+  to {
+    transform: translate(0px);
   }
 }
 @keyframes beer-img-anim {
@@ -110,5 +113,14 @@
     top: -250px;
     opacity: 1;
     left: var(--left);
+  }
+}
+
+@keyframes beer-anim {
+  from {
+    transform: translateX(-160px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }
