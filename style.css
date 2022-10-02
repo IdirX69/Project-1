@@ -16,16 +16,18 @@
 }
 .wild-fox {
   display: flex;
-
-  background: linear-gradient(var(--main-color), var(--fox-color));
+  background-image: url(./img/backfox.svg);
+  background-size: cover;
 }
 .wild-bee {
   display: flex;
   flex-direction: row-reverse;
-  background: linear-gradient(var(--fox-color), var(--bee-color));
+  background-image: url(./img/backbee.svg);
+  background-size: cover;
 }
 .wild-turtle {
-  background: linear-gradient(var(--bee-color), var(--turtle-color));
+  background-image: url(./img/backturtle.svg);
+  background-size: cover;
   display: flex;
 }
 
@@ -65,7 +67,7 @@
   line-height: 1.4rem;
 }
 .beer-presentation div {
-  background-color: rgba(117, 100, 100, 0.144);
+  background-color: rgba(206, 199, 199, 0.048);
   padding: 2.4rem;
   display: flex;
   flex-direction: column;
