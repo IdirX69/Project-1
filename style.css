@@ -45,8 +45,18 @@
 .turtle-paragraph {
   transform: translateX(180px);
 }
-.beer-presentation .turtle-img {
+.beer-presentation .turtle-img-pres {
   transform: translateX(-160px);
+}
+
+.turtle-paragraph {
+  transform: translateX(180px);
+}
+.turtle-img-pres {
+  transform: translateX(-160px);
+}
+.wild-bee p {
+  animation: beer-paragraph-bee normal 1.5s ease;
 }
 
 .beer-presentation img {
