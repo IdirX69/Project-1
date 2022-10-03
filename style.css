@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 :root {
@@ -10,14 +10,142 @@
   --fox-color: #f5e3cc;
   --bee-color: #f5eeb6;
   --turtle-color: #c7e4c1;
-  --font-main: 'Edo', sans-serif;
+  --font-main: "Edo", sans-serif;
   --spacing: 8px;
   --font-size: 1rem;
 }
+/*STARTS Beer presentation STARTS*/
 
+.beer-article {
+  height: 50vh;
+}
+.wild-fox {
+  display: flex;
+  background-image: url(./img/backfox.svg);
+  background-size: cover;
+}
+.wild-bee {
+  display: flex;
+  flex-direction: row-reverse;
+  background-image: url(./img/backbee.svg);
+  background-size: cover;
+}
+.wild-turtle {
+  background-image: url(./img/backturtle.svg);
+  background-size: cover;
+  display: flex;
+}
+
+.wild-fox p {
+  transform: translateX(180px);
+}
+.bee-paragraph {
+  transform: translateX(-160px);
+}
+.turtle-paragraph {
+  transform: translateX(180px);
+}
+.beer-presentation .turtle-img-pres {
+  transform: translateX(-160px);
+}
+
+.turtle-paragraph {
+  transform: translateX(180px);
+}
+.turtle-img-pres {
+  transform: translateX(-160px);
+}
+.wild-bee p {
+  animation: beer-paragraph-bee normal 1.5s ease;
+}
+
+.beer-presentation img {
+  height: 23rem;
+  width: 8rem;
+  margin: 2.5rem;
+}
+.beer-presentation h2 {
+  line-height: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.beer-presentation p {
+  font-family: Quicksand;
+  height: 300px;
+  width: 120px;
+  font-size: 1.1rem;
+  text-align: left;
+  line-height: 1.4rem;
+}
+.beer-presentation div {
+  background-color: rgba(206, 199, 199, 0.048);
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wild-turtle div {
+  padding-right: 180px;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgba(190, 189, 189, 0.664);
+  animation: anim 5s forwards;
+  opacity: 1;
+  z-index: 0;
+}
+
+@keyframes beer-paragraph-anim {
+  from {
+    transform: translateX(180px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+@keyframes beer-img-anim {
+  from {
+    transform: translateX(-200px);
+  }
+}
+@keyframes beer-img-bee {
+  from {
+    transform: translateX(160px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes beer-paragraph-bee {
+  from {
+    transform: translateX(-160px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes anim {
+  to {
+    top: -250px;
+    opacity: 1;
+    left: var(--left);
+  }
+}
+
+@keyframes beer-anim-img {
+  from {
+    transform: translateX(-160px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+/*END Beer Presentation END*/
 
 /*HEADER*/
-
 
 header {
   height: 105vh;
@@ -43,7 +171,6 @@ h1 {
 /*landpage animation */
 
 @keyframes rotation {
-
   from {
     transform: rotate(0deg);
   }
@@ -71,7 +198,6 @@ h1 {
   animation: rotation 2s ease-in-out infinite;
 }
 
-
 .logo {
   width: 100%;
   display: flex;
@@ -97,12 +223,11 @@ h1 {
   padding-right: 18px;
 }
 
-
 .text-header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: 'edo', sans-serif;
+  font-family: "edo", sans-serif;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -167,7 +292,7 @@ h1 {
 }
 
 .btn-main::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 0.2rem;
@@ -191,7 +316,6 @@ h1 {
   }
 
   100% {
-
     top: 0;
   }
 }
@@ -203,7 +327,6 @@ h1 {
   }
 
   100% {
-
     left: -30px;
     bottom: 15px;
   }
@@ -221,8 +344,6 @@ h1 {
   }
 }
 
-
-
 /*FOOTER*/
 
 footer {
@@ -230,7 +351,6 @@ footer {
   height: 80vh;
   background-image: url(img/bg-01.png);
   background-size: cover;
-
 }
 
 .container-ft {
@@ -287,15 +407,15 @@ footer input {
   width: 60%;
   padding: 0.3em;
   opacity: 0.8;
-  color: #312F2F;
+  color: #312f2f;
   font-weight: bold;
   margin-bottom: 1em;
   background-color: white;
-  border: #312F2F;
+  border: #312f2f;
 }
 
 footer input::placeholder {
-  color: #312F2F;
+  color: #312f2f;
   font-weight: bold;
   font-size: 1em;
 }
@@ -317,14 +437,13 @@ footer input::placeholder {
 }
 
 .btn::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 0.2rem;
   left: 0;
   bottom: 0;
   background: var(--turtle-color);
-
 }
 
 .barre {
@@ -365,10 +484,7 @@ footer input::placeholder {
   margin-top: 0.5rem;
 }
 
-
-
 /*SECTION BEST SELLER*/
-
 
 .beer-article {
   height: 50vh;
