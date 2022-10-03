@@ -1,18 +1,44 @@
 //section beer presentation start
-const turtleImg = document.querySelector(".turtle-img");
+const turtleImg = document.querySelector(".turtle-img-pres");
 const turtleP = document.querySelector(".turtle-paragraph");
+const foxImg = document.querySelector(".fox-img-pres");
+const foxP = document.querySelector(".fox-paragraph");
+const beeImg = document.querySelector(".bee-img-pres");
+const beeP = document.querySelector(".bee-paragraph");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
+  if (window.scrollY > 900) {
+    turtleImg.style.animation = "beer-anim-img normal 2s forwards";
+  } else {
+    turtleImg.style.animation = "none";
+    turtleImg.style.transform = "translateX(-160px)";
+  }
+  if (window.scrollY > 900) {
     turtleP.style.animation = "beer-paragraph-anim normal 2s forwards";
   } else {
     turtleP.style.animation = "none";
   }
-
-  if (window.scrollY > 100) {
-    turtleImg.style.animation = "beer-anim normal 2s forwards";
+  if (window.scrollY > 20) {
+    foxImg.style.animation = "beer-anim-img normal 2s forwards";
   } else {
-    turtleImg.style.animation = "none";
+    foxImg.style.animation = "none";
+    foxImg.style.transform = "translateX(-160px)";
+  }
+  if (window.scrollY > 20) {
+    foxP.style.animation = "beer-paragraph-anim normal 2s forwards";
+  } else {
+    foxP.style.animation = "none";
+  }
+  if (window.scrollY > 580) {
+    beeImg.style.animation = "beer-img-bee normal 2s forwards";
+  } else {
+    beeImg.style.animation = "none";
+    beeImg.style.transform = "translateX(160px)";
+  }
+  if (window.scrollY > 580) {
+    beeP.style.animation = "beer-paragraph-bee normal 2s forwards";
+  } else {
+    beeP.style.animation = "none";
   }
 });
 

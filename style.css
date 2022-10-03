@@ -14,6 +14,8 @@
   --spacing: 8px;
   --font-size: 1rem;
 }
+/*STARTS Beer presentation STARTS*/
+
 .beer-article {
   height: 50vh;
 }
@@ -35,20 +37,16 @@
 }
 
 .wild-fox p {
-  animation: beer-paragraph-anim normal 1.5s ease;
+  transform: translateX(180px);
 }
-.wild-fox img {
-  animation: beer-img-anim normal 1.5s forwards;
+.bee-paragraph {
+  transform: translateX(-160px);
 }
-
 .turtle-paragraph {
   transform: translateX(180px);
 }
-.turtle-img {
+.beer-presentation .turtle-img {
   transform: translateX(-160px);
-}
-.wild-bee p {
-  animation: beer-paragraph-bee normal 1.5s ease;
 }
 
 .beer-presentation img {
@@ -104,12 +102,18 @@
 }
 @keyframes beer-img-bee {
   from {
-    transform: translateX(200px);
+    transform: translateX(160px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }
 @keyframes beer-paragraph-bee {
   from {
-    transform: translateX(-400px);
+    transform: translateX(-160px);
+  }
+  to {
+    transform: translateX(0px);
   }
 }
 
@@ -121,14 +125,15 @@
   }
 }
 
-@keyframes beer-anim {
+@keyframes beer-anim-img {
   from {
     transform: translateX(-160px);
   }
   to {
-    transform: translateX(0px);
+    transform: translate(0px);
   }
 }
+/*END Beer Presentation END*/
 
 /*HEADER*/
 
