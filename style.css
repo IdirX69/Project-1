@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #1e2238;
-  font-family: 'Quicksand', sans-serif;
-}
-
 :root {
   --fox-color: #f5e3cc;
   --bee-color: #f5eeb6;
@@ -19,6 +14,15 @@ body {
   --spacing: 8px;
   --font-size: 1rem;
 }
+
+
+
+body {
+  background-color: #1e2238;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
 
 /*section age*/
 
@@ -729,8 +733,10 @@ footer input::placeholder {
 
 
 
-/*SECTION BEST SELLER*/
 
+
+
+/*STARTS Beer presentation STARTS*/
 
 .beer-article {
   height: 50vh;
@@ -738,48 +744,145 @@ footer input::placeholder {
 
 .wild-fox {
   display: flex;
-
-  background-color: var(--fox-color);
+  background-image: url(./img/backfox.svg);
+  background-size: cover;
 }
 
 .wild-bee {
   display: flex;
   flex-direction: row-reverse;
-  background-color: var(--bee-color);
+  background-image: url(./img/backbee.svg);
+  background-size: cover;
 }
 
 .wild-turtle {
-  background-color: var(--turtle-color);
+  background-image: url(./img/backturtle.svg);
+  background-size: cover;
   display: flex;
 }
 
-.wild-fox img {
-  height: 350px;
-  width: 125px;
+.wild-fox p {
+  transform: translateX(180px);
+}
+
+.bee-paragraph {
+  transform: translateX(-160px);
+}
+
+.turtle-paragraph {
+  transform: translateX(180px);
+}
+
+.beer-presentation .turtle-img-pres {
+  transform: translateX(-160px);
+}
+
+.turtle-paragraph {
+  transform: translateX(180px);
+}
+
+.turtle-img-pres {
+  transform: translateX(-160px);
+}
+
+.wild-bee p {
+  animation: beer-paragraph-bee normal 1.5s ease;
 }
 
 .beer-presentation img {
-  height: 350px;
-  width: 125px;
-  margin: 3rem;
+  height: 23rem;
+  width: 8rem;
+  margin: 2.5rem;
 }
 
 .beer-presentation h2 {
+  line-height: 2rem;
   font-size: 2rem;
-  font-family: var(--font-main);
+  margin-bottom: 1rem;
 }
 
 .beer-presentation p {
+  font-family: Quicksand;
   height: 300px;
   width: 120px;
   font-size: 1.1rem;
   text-align: left;
-  line-height: 1.6rem;
+  line-height: 1.4rem;
 }
 
 .beer-presentation div {
-  margin-top: 2rem;
+  background-color: rgba(206, 199, 199, 0.048);
+  padding: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
+.wild-turtle div {
+  padding-right: 180px;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgba(190, 189, 189, 0.664);
+  animation: anim 5s forwards;
+  opacity: 1;
+  z-index: 0;
+}
+
+@keyframes beer-paragraph-anim {
+  from {
+    transform: translateX(180px);
+  }
+
+  to {
+    transform: translate(0px);
+  }
+}
+
+@keyframes beer-img-anim {
+  from {
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes beer-img-bee {
+  from {
+    transform: translateX(160px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes beer-paragraph-bee {
+  from {
+    transform: translateX(-160px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes anim {
+  to {
+    top: -250px;
+    opacity: 1;
+    left: var(--left);
+  }
+}
+
+@keyframes beer-anim-img {
+  from {
+    transform: translateX(-160px);
+  }
+
+  to {
+    transform: translate(0px);
+  }
+}
+
+/*END Beer Presentation END*/
