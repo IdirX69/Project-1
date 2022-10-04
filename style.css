@@ -10,24 +10,19 @@
   --fox-color: #f5e3cc;
   --bee-color: #f5eeb6;
   --turtle-color: #c7e4c1;
-  --font-main: 'Edo', sans-serif;
+  --font-main: "Edo", sans-serif;
   --spacing: 8px;
   --font-size: 1rem;
 }
 
-
-
 body {
   background-color: #1e2238;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
-
-
 
 /*section age*/
 
 .sec-age {
-
   position: relative;
   min-height: 100vh;
   background-image: url("img/Shiny.svg");
@@ -105,7 +100,6 @@ body {
   bottom: 3em;
 }
 
-
 .sec-age .container .user .formBx form .button {
   position: relative;
   width: 100%;
@@ -124,14 +118,14 @@ body {
 }
 
 .sec-age .container .user .formBx form .button:hover {
-  background: #ECA03E;
+  background: #eca03e;
   color: #333;
 }
 
 .sec-age .text-verif {
   width: 100%;
   padding: 10px;
-  color: #ECA03E;
+  color: #eca03e;
   margin: 30px 0;
   font-size: 15px;
   letter-spacing: 1px;
@@ -148,7 +142,6 @@ body {
   display: flex;
   flex-direction: row;
 }
-
 
 .nav-toggler {
   position: fixed;
@@ -175,7 +168,6 @@ body {
   background: #f1f1f1;
   transition: transform 0.3s ease-out;
   opacity: 0.1s ease-out;
-
 }
 
 .l1 {
@@ -249,12 +241,11 @@ nav a {
 }
 
 .grid-turtle {
-  background-color: #80D3B9;
+  background-color: #80d3b9;
   grid-column: 1 / span 2;
 }
 
 /*HEADER*/
-
 
 header {
   height: 105vh;
@@ -277,14 +268,11 @@ h1 {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
-
 }
 
-
 @keyframes focus-in-expand {
-
   0% {
-    letter-spacing: -.5em;
+    letter-spacing: -0.5em;
     filter: blur(12px);
     opacity: 0;
   }
@@ -298,7 +286,6 @@ h1 {
 /*landpage animation */
 
 @keyframes rotation {
-
   from {
     transform: rotate(0deg);
   }
@@ -326,7 +313,6 @@ h1 {
   animation: rotation 2s ease-in-out infinite;
 }
 
-
 .logo {
   width: 100%;
   display: flex;
@@ -352,12 +338,11 @@ h1 {
   padding-right: 18px;
 }
 
-
 .text-header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: 'edo', sans-serif;
+  font-family: "edo", sans-serif;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -372,13 +357,11 @@ h1 {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
-
 }
 
 @keyframes focus-in-expand2 {
-
   0% {
-    letter-spacing: -.5em;
+    letter-spacing: -0.5em;
     filter: blur(12px);
     opacity: 0;
   }
@@ -403,8 +386,8 @@ h1 {
   right: 400px;
   width: 400px;
   height: 400px;
-  animation: myAnim2 2s ease 0.5s 1 normal forwards, myAnimBis2 4s ease 0.5s 1 normal forwards;
-
+  animation: myAnim2 2s ease 0.5s 1 normal forwards,
+    myAnimBis2 4s ease 0.5s 1 normal forwards;
 }
 
 @keyframes myAnim2 {
@@ -421,17 +404,16 @@ h1 {
   }
 }
 
-
 .conteneur-img .turtle-img {
   position: relative;
   right: 400px;
   width: 400px;
   height: 400px;
-  animation: myAnim 2s ease 0s 1 normal forwards, myAnimBis 4s ease 0s 1 normal forwards;
+  animation: myAnim 2s ease 0s 1 normal forwards,
+    myAnimBis 4s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnimBis2 {
-
   0%,
   100% {
     transform: translateX(0%);
@@ -474,7 +456,6 @@ h1 {
 }
 
 @keyframes myAnimBis {
-
   0%,
   100% {
     transform: translateX(0%);
@@ -502,13 +483,13 @@ h1 {
   }
 }
 
-
 .conteneur-img .bee-img {
   position: relative;
   right: 400px;
   width: 400px;
   height: 400px;
-  animation: myAnim3 2s ease 1s 1 normal forwards, myAnimBis3 4s ease 1s 1 normal forwards;
+  animation: myAnim3 2s ease 1s 1 normal forwards,
+    myAnimBis3 4s ease 1s 1 normal forwards;
 }
 
 @keyframes myAnim3 {
@@ -526,7 +507,6 @@ h1 {
 }
 
 @keyframes myAnimBis3 {
-
   0%,
   100% {
     transform: translateX(0%);
@@ -570,7 +550,7 @@ h1 {
 }
 
 .btn-main::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 0.2rem;
@@ -588,7 +568,6 @@ h1 {
   transform: scale(1, 1);
 }
 
-
 /*FOOTER*/
 
 footer {
@@ -596,7 +575,6 @@ footer {
   height: 80vh;
   background-image: url(img/bg-01.png);
   background-size: cover;
-
 }
 
 .container-ft {
@@ -653,15 +631,15 @@ footer input {
   width: 60%;
   padding: 0.3em;
   opacity: 0.8;
-  color: #312F2F;
+  color: #312f2f;
   font-weight: bold;
   margin-bottom: 1em;
   background-color: white;
-  border: #312F2F;
+  border: #312f2f;
 }
 
 footer input::placeholder {
-  color: #312F2F;
+  color: #312f2f;
   font-weight: bold;
   font-size: 1em;
 }
@@ -683,14 +661,13 @@ footer input::placeholder {
 }
 
 .btn::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 0.2rem;
   left: 0;
   bottom: 0;
   background: var(--turtle-color);
-
 }
 
 .barre {
@@ -730,11 +707,6 @@ footer input::placeholder {
 .copyright {
   margin-top: 0.5rem;
 }
-
-
-
-
-
 
 /*STARTS Beer presentation STARTS*/
 
@@ -887,126 +859,125 @@ footer input::placeholder {
 
 /*END Beer Presentation END*/
 
-
 /* CSS caroussel */
 .reviews {
-  background: rgb( 197, 239, 199 );
-  background-size:auto;
+  background: rgb(197, 239, 199);
+  background-size: auto;
 }
 
 .containercarousel {
-    width: 80%;
-    margin:20px auto; 
-    
-  }
-  .carousel {
-    border: 2px solid #fad584fd;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    background-color: rgb(197, 239, 199);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  .slidercarousel {
-    display: flex;
-    height: 100%;
-    width: 400%;
-  }
-  .slidercarousel section {
-    flex-basis: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 1rem;
-  }
+  width: 80%;
+  margin: 20px auto;
+}
+.carousel {
+  border: 2px solid #fad584fd;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  background-color: rgb(197, 239, 199);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.slidercarousel {
+  display: flex;
+  height: 100%;
+  width: 400%;
+}
+.slidercarousel section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+}
 
-  .profil1 img{
+.profil1 img {
   height: 50%;
   width: 50%;
   border-radius: 50%;
   contain: content;
-    }
-  .profil2 img{
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
-    }
-  .profil3 img{
-    height: 50%;
+}
+.profil2 img {
+  height: 50%;
   width: 50%;
   border-radius: 50%;
-    }
-  .profil4 img{
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
-  }
-    .profil1 {
-      max-height: 85%;
-      display: flex;
-      flex-direction: column;
-     align-items: center;
-     text-align: center;
-    }
+}
+.profil3 img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+.profil4 img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+.profil1 {
+  max-height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-    .profil2 {
-      max-height: 85%;
-      display: flex;
-      flex-direction: column;
-     align-items: center;
-     text-align: center;
-    }
+.profil2 {
+  max-height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-    .profil3 {
-      max-height: 85%;
-      display: flex;
-      flex-direction: column;
-     align-items: center;
-     text-align: center;
-    }
+.profil3 {
+  max-height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
-    .profil4 {
-      max-height: 85%;
-      max-width: 85%;
-      display: flex;
-      flex-direction: column;
-     align-items: center;
-     text-align: center;
-    }
+.profil4 {
+  max-height: 85%;
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
 /*CSS des bouttons du caroussel*/
-  .left, .right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  .left {
-    left: 10px;
-  }
-  .right {
-    right: 10px;
-  }
-  .controlcarousel ul {
-    list-style: none;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin: 0;
-    padding: 0;
-    transform: translate(-50%);
-  }
-  .controlcarousel ul li {
-    width: 10px;
-    height: 10px;
-    background: #333;
-    border: 2px solid #333;
-    border-radius: 50px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  .controlcarousel ul li.selected {
-    background: transparent;
-  }
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+.right {
+  right: 10px;
+}
+.controlcarousel ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+}
+.controlcarousel ul li {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border: 2px solid #333;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+.controlcarousel ul li.selected {
+  background: transparent;
+}
