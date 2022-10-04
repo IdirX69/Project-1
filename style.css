@@ -734,31 +734,27 @@ footer input::placeholder {
 }
 
 .wild-fox p {
-  transform: translateX(180px);
+  transform: translateX(40px);
 }
 
 .bee-paragraph {
-  transform: translateX(-160px);
+  transform: translateX(40px);
 }
 
 .turtle-paragraph {
-  transform: translateX(180px);
+  transform: translateX(40px);
 }
 
 .beer-presentation .turtle-img-pres {
-  transform: translateX(-160px);
+  transform: translateX(-40px);
 }
 
 .turtle-paragraph {
-  transform: translateX(180px);
+  transform: translateX(40px);
 }
 
 .turtle-img-pres {
-  transform: translateX(-160px);
-}
-
-.wild-bee p {
-  animation: beer-paragraph-bee normal 1.5s ease;
+  transform: translateX(-40px);
 }
 
 .beer-presentation img {
@@ -789,11 +785,6 @@ footer input::placeholder {
   flex-direction: column;
   justify-content: space-around;
 }
-
-.wild-turtle div {
-  padding-right: 180px;
-}
-
 .bubble {
   position: absolute;
   border-radius: 10px;
@@ -805,23 +796,24 @@ footer input::placeholder {
 
 @keyframes beer-paragraph-anim {
   from {
-    transform: translateX(180px);
+    transform: translateX(40px);
+    opacity: 0;
   }
-
   to {
-    transform: translate(0px);
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
 @keyframes beer-img-anim {
   from {
-    transform: translateX(-200px);
+    transform: translateX(-40px);
   }
 }
 
 @keyframes beer-img-bee {
   from {
-    transform: translateX(160px);
+    transform: translateX(40px);
   }
 
   to {
@@ -831,7 +823,7 @@ footer input::placeholder {
 
 @keyframes beer-paragraph-bee {
   from {
-    transform: translateX(-160px);
+    transform: translateX(-40px);
   }
 
   to {
@@ -849,7 +841,7 @@ footer input::placeholder {
 
 @keyframes beer-anim-img {
   from {
-    transform: translateX(-160px);
+    transform: translateX(-40px);
   }
 
   to {

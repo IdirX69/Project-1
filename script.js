@@ -67,7 +67,7 @@ window.addEventListener("scroll", () => {
     foxImg.style.animation = "beer-anim-img normal 2s forwards";
   } else {
     foxImg.style.animation = "none";
-    foxImg.style.transform = "translateX(-160px)";
+    foxImg.style.transform = "translateX(-40px)";
   }
   if (window.scrollY > 20) {
     foxP.style.animation = "beer-paragraph-anim normal 2s forwards";
@@ -78,7 +78,7 @@ window.addEventListener("scroll", () => {
     beeImg.style.animation = "beer-img-bee normal 2s forwards";
   } else {
     beeImg.style.animation = "none";
-    beeImg.style.transform = "translateX(160px)";
+    beeImg.style.transform = "translateX(40px)";
   }
   if (window.scrollY > 580) {
     beeP.style.animation = "beer-paragraph-bee normal 2s forwards";
