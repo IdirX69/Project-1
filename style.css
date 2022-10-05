@@ -807,7 +807,12 @@ footer input::placeholder {
 
 @keyframes beer-img-anim {
   from {
+    opacity: 0;
     transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
@@ -823,10 +828,12 @@ footer input::placeholder {
 
 @keyframes beer-paragraph-bee {
   from {
+    opacity: 0;
     transform: translateX(-40px);
   }
 
   to {
+    opacity: 1;
     transform: translateX(0px);
   }
 }
@@ -972,4 +979,66 @@ footer input::placeholder {
 }
 .controlcarousel ul li.selected {
   background: transparent;
+}
+@media screen and (min-width: 1280px) {
+  .beer-presentation {
+    background: #c7e4c1;
+    background: -moz-linear-gradient(
+      -45deg,
+      #c7e4c1 0%,
+      #f5eeb6 50%,
+      #f5e3cc 100%
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      #c7e4c1 0%,
+      #f5eeb6 50%,
+      #f5e3cc 100%
+    );
+    background: linear-gradient(135deg, #c7e4c1 0%, #f5eeb6 50%, #f5e3cc 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .beer-presentation article {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+  }
+  .beer-presentation .wild-fox p {
+    animation: none;
+  }
+  .wild-fox {
+    flex-direction: row-reverse;
+    background-image: none;
+  }
+  .wild-turtle {
+    flex-direction: row-reverse;
+  }
+  .beer-presentation div {
+    height: 75vh;
+    justify-content: center;
+  }
+  .beer-presentation div p {
+    line-height: 1.5rem;
+    height: 40vh;
+    width: 15vw;
+  }
+  .beer-article {
+    background-image: none;
+  }
+  .beer-article h2 {
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .beer-presentation .best-sceller {
+    position: relative;
+    border: solid 3px red;
+    height: 20vh;
+    width: 100vw;
+  }
 }
