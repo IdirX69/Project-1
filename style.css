@@ -749,6 +749,9 @@ footer input::placeholder {
 }
 
 /*STARTS Beer presentation STARTS*/
+.title-beer-presentation {
+  font-size: 2rem;
+}
 
 .beer-article {
   height: 50vh;
@@ -906,7 +909,6 @@ footer input::placeholder {
 .our-flavours {
   background-image: url("img/lol.jpg");
   background-size: cover;
-  width: 100vw;
 }
 
 .container-card {
@@ -925,8 +927,7 @@ footer input::placeholder {
   font-size: 4em;
   line-height: 1em;
   text-align: center;
-  width: 100vw;
-  padding: 1em;
+  padding: 1rem 0rem;
 }
 
 .card {
