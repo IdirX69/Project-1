@@ -1238,13 +1238,13 @@ END OPTIONNAL NAV BAR
   background: rgb( 197, 239, 199 );
   background-size:auto;
   text-align: center;
-  font-family: 'edo', sans-serif;
-  
 }
 
-
+.carousel h2 {
+  font-family: 'edo', sans-serif;
+}
 .containercarousel {
-    width: 100%;
+    width: 100vw;
     margin: auto; 
     
   }
@@ -1252,7 +1252,6 @@ END OPTIONNAL NAV BAR
     overflow: hidden;
     position: relative;
     background-color: rgb(197, 239, 199);
-    margin-top: 1em;
   }
   .slidercarousel {
     display: flex;
@@ -1381,4 +1380,26 @@ END OPTIONNAL NAV BAR
   .slidercarousel{
   height: 400px;
   }
+  }
+
+
+  .containerabout{
+    display: flex;
+flex-direction: row;
+    height: auto;
+    align-items: center;
+    
+  }
+
+  .photoabout{
+    height: 10em;
+  
+    background-image: url(./image_review/femme4.jpg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 50vw;
+  }
+
+  .textabout{
+    width: 50vw;
   }
