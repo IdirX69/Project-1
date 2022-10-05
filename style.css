@@ -7,9 +7,9 @@
 }
 
 :root {
-  --fox-color: #f5e3cc;
-  --bee-color: #f5eeb6;
-  --turtle-color: #c7e4c1;
+  --fox-color: #eea51e;
+  --bee-color: #f3dc10;
+  --turtle-color: #2bc064;
   --font-main: "Edo", sans-serif;
   --spacing: 8px;
   --font-size: 1rem;
@@ -749,6 +749,7 @@ footer input::placeholder {
 }
 
 /*STARTS Beer presentation STARTS*/
+
 .title-beer-presentation {
   font-size: 2rem;
 }
@@ -1362,31 +1363,20 @@ END OPTIONNAL NAV BAR
 /*Beer preseantation Media Queries 1280px*/
 @media screen and (min-width: 1280px) {
   .beer-presentation {
-    background: #c7e4c1;
-    background: -moz-linear-gradient(
-      -45deg,
-      #c7e4c1 0%,
-      #f5eeb6 50%,
-      #f5e3cc 100%
-    );
-    background: -webkit-linear-gradient(
-      -45deg,
-      #c7e4c1 0%,
-      #f5eeb6 50%,
-      #f5e3cc 100%
-    );
-    background: linear-gradient(135deg, #c7e4c1 0%, #f5eeb6 50%, #f5e3cc 100%);
     height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: row-reverse;
   }
-
   .beer-presentation article {
-    height: 100vh;
+    height: 70vh;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33vw;
+    width: 26vw;
+    box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
   }
   .beer-presentation .wild-fox p {
     animation: none;
@@ -1394,26 +1384,34 @@ END OPTIONNAL NAV BAR
   .wild-fox {
     flex-direction: row-reverse;
     background-image: none;
+    background-color: var(--fox-color);
   }
 
   .wild-turtle {
+    background-color: var(--turtle-color);
     flex-direction: row-reverse;
+  }
+  .wild-bee {
+    background-color: var(--bee-color);
   }
 
   .beer-presentation div {
     height: 75vh;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.301);
   }
 
   .beer-presentation div p {
+    color: rgb(255, 255, 255);
     line-height: 1.5rem;
+    padding-right: 1rem;
     height: 50vh;
+    font-size: 1.2rem;
+    text-align: justify;
     max-width: 15vw;
-    background-color: rgba(255, 255, 255, 0);
   }
 
-  .beer-article {
+  .beer-presentation .beer-article {
     background-image: none;
   }
 
@@ -1421,9 +1419,9 @@ END OPTIONNAL NAV BAR
     padding-bottom: 3rem;
     font-size: 3rem;
     line-height: 3rem;
+    color: rgb(255, 255, 255);
   }
-
-  .beer-presentation .best-sceller {
+  .beer-article h2 .beer-presentation .best-sceller {
     position: relative;
     border: solid 3px red;
     height: 20vh;

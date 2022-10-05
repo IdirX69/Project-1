@@ -14,38 +14,33 @@ logoText.addEventListener("mouseleave", function () {
 //HAMBURGER
 
 const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
 
   // toggle nav
 
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
 
     //Animate links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
-        link.style.animation = '';
+        link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0}s`
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0
+        }s`;
       }
     });
 
-    //Burger Animation 
+    //Burger Animation
 
-    burger.classList.toggle('toggle');
-
-
-
+    burger.classList.toggle("toggle");
   });
-
-}
+};
 
 navSlide();
-
-
 
 //validation age
 
@@ -75,7 +70,7 @@ const foxP = document.querySelector(".fox-paragraph");
 const beeImg = document.querySelector(".bee-img-pres");
 const beeP = document.querySelector(".bee-paragraph");
 
-// Resolution is < 1280px scroll
+// Resolution is 1024x768 or above
 
 window.addEventListener("scroll", () => {
   if (window.matchMedia("(max-width: 1200px)").matches) {
@@ -113,7 +108,25 @@ window.addEventListener("scroll", () => {
     }
   }
 });
-// bubble maker
+
+const bubbleMaker = () => {
+  const bubble = document.createElement("span");
+  bubble.classList.add("bubble");
+  document.body.appendChild(bubble);
+
+  const size = Math.random() * 10 + "px";
+
+  bubble.style.height = size;
+  bubble.style.width = size;
+  bubble.style.top = Math.random() * 100 + "%";
+  bubble.style.left = Math.random() * 100 + "%";
+  const plusMinus = Math.random() > 0.5 ? 1 : -1;
+  bubble.style.setProperty("--left", Math.random() * 100 * plusMinus + "%");
+  setTimeout(() => {
+    bubble.remove();
+  }, 8000);
+};
+setInterval(bubbleMaker, 200);
 
 //Section beer presentation end
 
