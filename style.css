@@ -889,27 +889,29 @@ footer input::placeholder {
 
 
 /* CSS caroussel */
-.reviews {
+.reviews h2 {
   background: rgb( 197, 239, 199 );
   background-size:auto;
+  text-align: center;
+  font-family: 'edo', sans-serif;
+  
 }
 
+
 .containercarousel {
-    width: 80%;
-    margin:20px auto; 
+    width: 100%;
+    margin: auto; 
     
   }
   .carousel {
-    border: 2px solid #fad584fd;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     background-color: rgb(197, 239, 199);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
   }
   .slidercarousel {
     display: flex;
-    height: 100%;
+    height: 60vh;
     width: 400%;
   }
   .slidercarousel section {
@@ -921,36 +923,51 @@ footer input::placeholder {
   }
 
   .profil1 img{
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
-  contain: content;
-    }
+    width: 200px;
+    clip-path: ellipse(35% 50%);
+    margin-bottom: 3em;
+
+  }
+  
+
   .profil2 img{
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
+    width: 200px;
+    clip-path: ellipse(45% 50%);
+    max-width: 80%;
+   max-height: 80%;
+   margin-bottom: 3em;
+   
+    
     }
+
+  
   .profil3 img{
-    height: 50%;
-  width: 50%;
-  border-radius: 50%;
+    width: 200px;
+    clip-path: ellipse(30% 50%);
+    margin-bottom: 4em;
+    
     }
   .profil4 img{
-    height: 50%;
-    width: 50%;
-    border-radius: 50%;
+    width: 200px;
+    clip-path: ellipse(50% 30%);
+    max-width: 70%;
+   max-height: 70%;
+  
+   
   }
+
+  
     .profil1 {
-      max-height: 85%;
+      
       display: flex;
       flex-direction: column;
      align-items: center;
      text-align: center;
+     
     }
 
     .profil2 {
-      max-height: 85%;
+     
       display: flex;
       flex-direction: column;
      align-items: center;
@@ -958,7 +975,7 @@ footer input::placeholder {
     }
 
     .profil3 {
-      max-height: 85%;
+     
       display: flex;
       flex-direction: column;
      align-items: center;
@@ -966,8 +983,7 @@ footer input::placeholder {
     }
 
     .profil4 {
-      max-height: 85%;
-      max-width: 85%;
+   
       display: flex;
       flex-direction: column;
      align-items: center;
@@ -980,10 +996,12 @@ footer input::placeholder {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    font-size: 2rem;
   }
   
   .left {
     left: 10px;
+    
   }
   .right {
     right: 10px;
@@ -1009,4 +1027,13 @@ footer input::placeholder {
   }
   .controlcarousel ul li.selected {
     background: transparent;
+  }
+
+  @media screen and (min-width: 1024px){
+  .containercarousel{
+    height: 400px;
+  }
+  .slidercarousel{
+  height: 400px;
+  }
   }
