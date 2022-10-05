@@ -10,24 +10,19 @@
   --fox-color: #f5e3cc;
   --bee-color: #f5eeb6;
   --turtle-color: #c7e4c1;
-  --font-main: 'Edo', sans-serif;
+  --font-main: "Edo", sans-serif;
   --spacing: 8px;
   --font-size: 1rem;
 }
 
-
-
 body {
   background-color: #fff;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
-
-
 
 /*section age*/
 
 .sec-age {
-
   position: relative;
   min-height: 100vh;
   background-image: url("img/Shiny.svg");
@@ -105,7 +100,6 @@ body {
   bottom: 3em;
 }
 
-
 .sec-age .container .user .formBx form .button {
   position: relative;
   width: 100%;
@@ -125,14 +119,14 @@ body {
 }
 
 .sec-age .container .user .formBx form .button:hover {
-  background: #ECA03E;
+  background: #eca03e;
   color: #333;
 }
 
 .sec-age .text-verif {
   width: 100%;
   padding: 10px;
-  color: #ECA03E;
+  color: #eca03e;
   margin: 30px 0;
   font-size: 15px;
   letter-spacing: 1px;
@@ -296,7 +290,6 @@ nav {
 
 /*HEADER*/
 
-
 header {
 
   height: 100vh;
@@ -319,14 +312,11 @@ h1 {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
-
 }
 
-
 @keyframes focus-in-expand {
-
   0% {
-    letter-spacing: -.5em;
+    letter-spacing: -0.5em;
     filter: blur(12px);
     opacity: 0;
   }
@@ -340,7 +330,6 @@ h1 {
 /*landpage animation */
 
 @keyframes rotation {
-
   from {
     transform: rotate(0deg);
   }
@@ -368,7 +357,6 @@ h1 {
   animation: rotation 2s ease-in-out infinite;
 }
 
-
 .logo {
   width: 100%;
   display: flex;
@@ -394,12 +382,11 @@ h1 {
   padding-right: 18px;
 }
 
-
 .text-header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-family: 'edo', sans-serif;
+  font-family: "edo", sans-serif;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -414,13 +401,11 @@ h1 {
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: none;
-
 }
 
 @keyframes focus-in-expand2 {
-
   0% {
-    letter-spacing: -.5em;
+    letter-spacing: -0.5em;
     filter: blur(12px);
     opacity: 0;
   }
@@ -445,8 +430,8 @@ h1 {
   right: 400px;
   width: 400px;
   height: 400px;
-  animation: myAnim2 2s ease 0.5s 1 normal forwards, myAnimBis2 4s ease 0.5s 1 normal forwards;
-
+  animation: myAnim2 2s ease 0.5s 1 normal forwards,
+    myAnimBis2 4s ease 0.5s 1 normal forwards;
 }
 
 @keyframes myAnim2 {
@@ -463,13 +448,13 @@ h1 {
   }
 }
 
-
 .conteneur-img .turtle-img {
   position: relative;
   right: 400px;
   width: 400px;
   height: 400px;
-  animation: myAnim 2s ease 0s 1 normal forwards, myAnimBis 4s ease 0s 1 normal forwards;
+  animation: myAnim 2s ease 0s 1 normal forwards,
+    myAnimBis 4s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnimBis2 {
@@ -544,13 +529,13 @@ h1 {
   }
 }
 
-
 .conteneur-img .bee-img {
   position: relative;
   right: 400px;
   width: 400px;
   height: 400px;
-  animation: myAnim3 2s ease 1s 1 normal forwards, myAnimBis3 4s ease 1s 1 normal forwards;
+  animation: myAnim3 2s ease 1s 1 normal forwards,
+    myAnimBis3 4s ease 1s 1 normal forwards;
 }
 
 @keyframes myAnim3 {
@@ -612,7 +597,7 @@ h1 {
 }
 
 .btn-main::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 0.2rem;
@@ -630,7 +615,6 @@ h1 {
   transform: scale(1, 1);
 }
 
-
 /*FOOTER*/
 
 footer {
@@ -638,7 +622,6 @@ footer {
   height: 80vh;
   background-image: url(img/bg-01.png);
   background-size: cover;
-
 }
 
 .container-ft {
@@ -695,15 +678,15 @@ footer input {
   width: 60%;
   padding: 0.3em;
   opacity: 0.8;
-  color: #312F2F;
+  color: #312f2f;
   font-weight: bold;
   margin-bottom: 1em;
   background-color: white;
-  border: #312F2F;
+  border: #312f2f;
 }
 
 footer input::placeholder {
-  color: #312F2F;
+  color: #312f2f;
   font-weight: bold;
   font-size: 1em;
 }
@@ -725,14 +708,13 @@ footer input::placeholder {
 }
 
 .btn::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 0.2rem;
   left: 0;
   bottom: 0;
   background: var(--turtle-color);
-
 }
 
 .barre {
@@ -773,11 +755,6 @@ footer input::placeholder {
   margin-top: 0.5rem;
 }
 
-
-
-
-
-
 /*STARTS Beer presentation STARTS*/
 
 .beer-article {
@@ -804,31 +781,27 @@ footer input::placeholder {
 }
 
 .wild-fox p {
-  transform: translateX(180px);
+  transform: translateX(40px);
 }
 
 .bee-paragraph {
-  transform: translateX(-160px);
+  transform: translateX(40px);
 }
 
 .turtle-paragraph {
-  transform: translateX(180px);
+  transform: translateX(40px);
 }
 
 .beer-presentation .turtle-img-pres {
-  transform: translateX(-160px);
+  transform: translateX(-40px);
 }
 
 .turtle-paragraph {
-  transform: translateX(180px);
+  transform: translateX(40px);
 }
 
 .turtle-img-pres {
-  transform: translateX(-160px);
-}
-
-.wild-bee p {
-  animation: beer-paragraph-bee normal 1.5s ease;
+  transform: translateX(-40px);
 }
 
 .beer-presentation img {
@@ -860,10 +833,6 @@ footer input::placeholder {
   justify-content: space-around;
 }
 
-.wild-turtle div {
-  padding-right: 180px;
-}
-
 .bubble {
   position: absolute;
   border-radius: 10px;
@@ -875,23 +844,31 @@ footer input::placeholder {
 
 @keyframes beer-paragraph-anim {
   from {
-    transform: translateX(180px);
+    transform: translateX(40px);
+    opacity: 0;
   }
 
   to {
-    transform: translate(0px);
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
 @keyframes beer-img-anim {
   from {
-    transform: translateX(-200px);
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
 @keyframes beer-img-bee {
   from {
-    transform: translateX(160px);
+    transform: translateX(40px);
   }
 
   to {
@@ -901,10 +878,12 @@ footer input::placeholder {
 
 @keyframes beer-paragraph-bee {
   from {
-    transform: translateX(-160px);
+    opacity: 0;
+    transform: translateX(-40px);
   }
 
   to {
+    opacity: 1;
     transform: translateX(0px);
   }
 }
@@ -919,7 +898,7 @@ footer input::placeholder {
 
 @keyframes beer-anim-img {
   from {
-    transform: translateX(-160px);
+    transform: translateX(-40px);
   }
 
   to {
@@ -929,16 +908,12 @@ footer input::placeholder {
 
 /*END Beer Presentation END*/
 
-
-
 /*CARD*/
-
 
 .our-flavours {
   background-image: url("img/lol.jpg");
   background-size: cover;
   width: 100vw;
-
 }
 
 .container-card {
@@ -952,7 +927,7 @@ footer input::placeholder {
 }
 
 .our-flavours h2 {
-  font-family: 'edo', sans-serif;
+  font-family: "edo", sans-serif;
   color: rgb(41, 40, 40);
   font-size: 4em;
   line-height: 1em;
@@ -969,7 +944,6 @@ footer input::placeholder {
   border-radius: 20px;
   transition: 0.5s;
   transition-delay: 0.5s;
-
 }
 
 .card:hover {
@@ -979,7 +953,6 @@ footer input::placeholder {
 .card:hover .test {
   visibility: hidden;
   opacity: 0;
-
 }
 
 .card .test {
@@ -1006,11 +979,10 @@ footer input::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .card .rec-box::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1043,7 +1015,6 @@ footer input::placeholder {
   background: rgb(199, 17, 17);
 }
 
-
 .card .rec-box .card-logo {
   position: relative;
   width: 200px;
@@ -1057,9 +1028,8 @@ footer input::placeholder {
   transition-delay: 0s;
 }
 
-
 .test h3 {
-  font-family: 'edo', sans-serif;
+  font-family: "edo", sans-serif;
   color: #fff;
   text-transform: uppercase;
   font-size: 2.5em;
@@ -1078,7 +1048,6 @@ footer input::placeholder {
   margin-bottom: 4em;
   cursor: pointer;
   font-size: 1rem;
-
 }
 
 .content {
@@ -1097,7 +1066,7 @@ footer input::placeholder {
 }
 
 .content h3 {
-  font-family: 'edo', sans-serif;
+  font-family: "edo", sans-serif;
   color: #fff;
   text-transform: uppercase;
   font-size: 2.5em;
@@ -1108,8 +1077,6 @@ footer input::placeholder {
   color: #fff;
   width: 80%;
 }
-
-
 
 .card .product_img {
   position: absolute;
@@ -1128,7 +1095,6 @@ footer input::placeholder {
 }
 
 @media (max-width: 991px) {
-
   .card {
     width: auto;
     max-width: 350px;
@@ -1157,7 +1123,6 @@ footer input::placeholder {
   left: 0;
   padding: 40px;
 }
-
 
 /*
 CODE OPTIONNEL NAV BAR
@@ -1269,35 +1234,30 @@ input {
 END OPTIONNAL NAV BAR
 */
 
-
-
-
-
 /* CSS caroussel */
 
 .reviews {
   background: rgb(197, 239, 199);
   background-size: auto;
+  text-align: center;
+  font-family: "edo", sans-serif;
 }
 
 .containercarousel {
-  width: 80%;
-  margin: 20px auto;
-
+  width: 100%;
+  margin: auto;
 }
 
 .carousel {
-  border: 2px solid #fad584fd;
   overflow: hidden;
   position: relative;
-  border-radius: 10px;
   background-color: rgb(197, 239, 199);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .slidercarousel {
   display: flex;
-  height: 100%;
+  height: 60vh;
   width: 400%;
 }
 
@@ -1310,32 +1270,33 @@ END OPTIONNAL NAV BAR
 }
 
 .profil1 img {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
-  contain: content;
+  width: 200px;
+  clip-path: ellipse(35% 50%);
+  margin-bottom: 3em;
 }
 
 .profil2 img {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
+  width: 200px;
+  clip-path: ellipse(45% 50%);
+  max-width: 80%;
+  max-height: 80%;
+  margin-bottom: 3em;
 }
 
 .profil3 img {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
+  width: 200px;
+  clip-path: ellipse(30% 50%);
+  margin-bottom: 4em;
 }
 
 .profil4 img {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
+  width: 200px;
+  clip-path: ellipse(50% 30%);
+  max-width: 70%;
+  max-height: 70%;
 }
 
 .profil1 {
-  max-height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1343,7 +1304,6 @@ END OPTIONNAL NAV BAR
 }
 
 .profil2 {
-  max-height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1351,7 +1311,6 @@ END OPTIONNAL NAV BAR
 }
 
 .profil3 {
-  max-height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1359,8 +1318,6 @@ END OPTIONNAL NAV BAR
 }
 
 .profil4 {
-  max-height: 85%;
-  max-width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1374,6 +1331,7 @@ END OPTIONNAL NAV BAR
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  font-size: 2rem;
 }
 
 .left {
@@ -1408,3 +1366,79 @@ END OPTIONNAL NAV BAR
 .controlcarousel ul li.selected {
   background: transparent;
 }
+
+@media screen and (min-width: 1280px) {
+  .beer-presentation {
+    background: #c7e4c1;
+    background: -moz-linear-gradient(-45deg,
+        #c7e4c1 0%,
+        #f5eeb6 50%,
+        #f5e3cc 100%);
+    background: -webkit-linear-gradient(-45deg,
+        #c7e4c1 0%,
+        #f5eeb6 50%,
+        #f5e3cc 100%);
+    background: linear-gradient(135deg, #c7e4c1 0%, #f5eeb6 50%, #f5e3cc 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .beer-presentation article {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+  }
+
+  .beer-presentation .wild-fox p {
+    animation: none;
+  }
+
+  .wild-fox {
+    flex-direction: row-reverse;
+    background-image: none;
+  }
+
+  .wild-turtle {
+    flex-direction: row-reverse;
+  }
+
+  .beer-presentation div {
+    height: 75vh;
+    justify-content: center;
+  }
+
+  .beer-presentation div p {
+    line-height: 1.5rem;
+    height: 40vh;
+    width: 15vw;
+  }
+
+  .beer-article {
+    background-image: none;
+  }
+
+  .beer-article h2 {
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .beer-presentation .best-sceller {
+    position: relative;
+    border: solid 3px red;
+    height: 20vh;
+    width: 100vw;
+
+    @media screen and (min-width: 1024px) {
+      .containercarousel {
+        height: 400px;
+      }
+
+      .slidercarousel {
+        height: 400px;
+      }
+    }
