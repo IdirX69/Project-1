@@ -781,7 +781,7 @@ footer input::placeholder {
 
 .beer-presentation div {
   background-color: rgba(206, 199, 199, 0.048);
-  padding: 2.4rem;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1195,7 +1195,7 @@ END OPTIONNAL NAV BAR
 }
 
 .containercarousel {
-  width: 100%;
+  width: 100vw;
   margin: auto;
 }
 .carousel {
@@ -1309,6 +1309,8 @@ END OPTIONNAL NAV BAR
 .controlcarousel ul li.selected {
   background: transparent;
 }
+
+/*Beer preseantation Media Queries 1280px*/
 @media screen and (min-width: 1280px) {
   .beer-presentation {
     background: #c7e4c1;
@@ -1337,9 +1339,6 @@ END OPTIONNAL NAV BAR
     align-items: center;
     width: 33vw;
   }
-  .beer-presentation .wild-fox p {
-    animation: none;
-  }
   .wild-fox {
     flex-direction: row-reverse;
     background-image: none;
@@ -1350,11 +1349,13 @@ END OPTIONNAL NAV BAR
   .beer-presentation div {
     height: 75vh;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
   }
   .beer-presentation div p {
     line-height: 1.5rem;
-    height: 40vh;
-    width: 15vw;
+    height: 50vh;
+    max-width: 15vw;
+    background-color: rgba(255, 255, 255, 0);
   }
   .beer-article {
     background-image: none;
@@ -1369,12 +1370,14 @@ END OPTIONNAL NAV BAR
     border: solid 3px red;
     height: 20vh;
     width: 100vw;
-
-@media screen and (min-width: 1024px) {
-  .containercarousel {
-    height: 400px;
   }
-  .slidercarousel {
-    height: 400px;
+
+  @media screen and (min-width: 1024px) {
+    .containercarousel {
+      height: 400px;
+    }
+    .slidercarousel {
+      height: 400px;
+    }
   }
 }
