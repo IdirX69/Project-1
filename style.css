@@ -1195,7 +1195,6 @@ END OPTIONNAL NAV BAR
 }
 
 .containercarousel {
-  width: 100vw;
   margin: auto;
 }
 .carousel {
@@ -1327,7 +1326,6 @@ END OPTIONNAL NAV BAR
       #f5e3cc 100%
     );
     background: linear-gradient(135deg, #c7e4c1 0%, #f5eeb6 50%, #f5e3cc 100%);
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row-reverse;
