@@ -1432,13 +1432,14 @@ END OPTIONNAL NAV BAR
     border: solid 3px red;
     height: 20vh;
     width: 100vw;
+  }
 
-    @media screen and (min-width: 1024px) {
-      .containercarousel {
-        height: 400px;
-      }
-
-      .slidercarousel {
-        height: 400px;
-      }
+  @media screen and (min-width: 1024px) {
+    .containercarousel {
+      height: 400px;
     }
+
+    .slidercarousel {
+      height: 400px;
+    }
+  }
