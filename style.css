@@ -180,6 +180,10 @@ nav {
   padding: 1em;
 }
 
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
 .burger {
   display: none;
 }
@@ -283,7 +287,8 @@ nav {
 /*HEADER*/
 
 header {
-  height: 100vh;
+  padding-top: 5em;
+  height: 110vh;
   width: 100%;
   background-color: rgb(245, 225, 209);
   background-image: url("img/Green\ Brown\ Nature\ World\ Wildlife\ Conservation\ Day\ Printable\ Flyer\ \(1\).svg");
@@ -610,7 +615,7 @@ h1 {
 
 footer {
   background-color: var(--turtle-color);
-  height: 80vh;
+  height: 100vh;
   background-image: url(img/bg-01.png);
   background-size: cover;
 }
@@ -905,13 +910,15 @@ footer input::placeholder {
 /*CARD*/
 
 .our-flavours {
-  background-image: url("img/lol.jpg");
+  background-color: #fff;
   background-size: cover;
+  padding-top: 8vh;
+  ;
 }
 
 .container-card {
   margin: 0 auto;
-  width: 80vw;
+  width: 75vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -983,28 +990,38 @@ footer input::placeholder {
   transition: 0.5s;
 }
 
+.rec-box {
+  box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
+}
+
 .rec-bee {
   background: rgb(243, 220, 16);
+
 }
 
 .rec-fox {
   background: rgb(238, 165, 30);
+
 }
 
 .rec-turtle {
   background: rgb(43, 192, 100);
+
 }
 
 .rec-shark {
   background: rgb(62, 178, 231);
+
 }
 
 .rec-panda {
   background: rgb(78, 78, 78);
+
 }
 
 .rec-bear {
   background: rgb(199, 17, 17);
+
 }
 
 .card .rec-box .card-logo {
@@ -1030,17 +1047,41 @@ footer input::placeholder {
   text-align: center;
 }
 
+
+.test p i {
+  color: #fff;
+
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 1em;
+  z-index: 10;
+  rotate: -15deg;
+  left: 1em;
+  animation: cursor 0.5s ease 0s infinite alternate forwards;
+}
+
+@keyframes cursor {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .test button {
-  color: #111;
-  background: #fff;
+  color: #fff;
+  background: #111;
   padding: 10px 20px;
   border-radius: 10px;
   font-weight: bold;
   border: none;
-  margin-bottom: 4em;
+  margin-top: 5em;
   cursor: pointer;
   font-size: 1rem;
 }
+
 
 .content {
   position: relative;
