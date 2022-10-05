@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #1e2238;
+  background-color: #fff;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -115,6 +115,7 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
+  border-radius: 1em;
 }
 
 .sec-age .container .user .formBx form .button:hover {
@@ -857,72 +858,148 @@ footer input::placeholder {
   }
 }
 
-/* OURS FLAVOURS */
-.divBody {
+/*END Beer Presentation END*/
+
+/*CARD*/
+
+.our-flavours {
+  background-image: url("img/lol.jpg");
+  background-size: cover;
+  width: 100vw;
+}
+
+.container-card {
+  margin: 0 auto;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 100vh;
-  background-color: rgb(236, 194, 139);
+  padding-bottom: 10rem;
+}
+
+.our-flavours h2 {
+  font-family: "edo", sans-serif;
+  color: rgb(41, 40, 40);
+  font-size: 4em;
+  line-height: 1em;
+  text-align: center;
+  width: 100vw;
+  padding: 1em;
 }
 
 .card {
   position: relative;
-  width: 300px;
+  width: 330px;
   height: 350px;
   margin: 20px;
   border-radius: 20px;
-  transition: 0.3s;
-  transition-delay: 0.1s;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .card:hover {
-  width: 600px;
-  transition-delay: 0s;
+  width: 550px;
 }
-.card .circle {
+
+.card:hover .test {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.card .test {
+  display: flex;
+  z-index: 9000;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s, visibility 1s;
+}
+
+.card .rec-box {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card .circle .beerImage {
-  position: relative;
-  height: 330px;
-  width: 110px;
-  transition: 0.5s;
-  transition-delay: 0.3s;
-}
-
-.card:hover .circle .beerImage {
-  transform: scale(0);
-  transition-delay: 0s;
-}
-
-.card .circle::before {
-  border-radius: 10%;
+.card .rec-box::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
-  clip-path: circle(120px at center);
-  transition: 1.5s;
+  transition: 0.5s;
 }
 
-.card:hover .circle::before {
-  clip-path: circle(400px at center);
+.rec-bee {
+  background: rgb(243, 220, 16);
+}
+
+.rec-fox {
+  background: rgb(238, 165, 30);
+}
+
+.rec-turtle {
+  background: rgb(43, 192, 100);
+}
+
+.rec-shark {
+  background: rgb(62, 178, 231);
+}
+
+.rec-panda {
+  background: rgb(78, 78, 78);
+}
+
+.rec-bear {
+  background: rgb(199, 17, 17);
+}
+
+.card .rec-box .card-logo {
+  position: relative;
+  width: 200px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  width: 100px;
+}
+
+.card:hover .rec-box .card-logo {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+
+.test h3 {
+  font-family: "edo", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  line-height: 1em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.test button {
+  color: #111;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 4em;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .content {
@@ -930,66 +1007,73 @@ footer input::placeholder {
   width: 50%;
   left: 20%;
   padding: 20px 20px 20px 40px;
-  opacity: 0;
   transition: 0.5s;
   visibility: hidden;
 }
 
 .card:hover .content {
   left: 0;
-  opacity: 1;
   visibility: visible;
   transition-delay: 0.5s;
 }
 
-.content h2 {
-  color: gold;
+.content h3 {
+  font-family: "edo", sans-serif;
+  color: #fff;
   text-transform: uppercase;
   font-size: 2.5em;
   line-height: 1em;
+}
+
+.content p {
+  color: #fff;
+  width: 80%;
 }
 
 .card .product_img {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 85%;
   transform: translate(-50%, -50%) scale(0);
-  height: 500px;
-  transition: 1s;
+  height: 400px;
+  transition: 0.5s;
   transition-delay: 0s;
 }
 
 .card:hover .product_img {
-  left: 72%;
+  left: 85%;
   transform: translate(-50%, -50%) scale(1);
+  transition-delay: 0.5s;
 }
 
-.content .foxh2 {
-  color: rgb(228, 132, 7);
-  text-transform: uppercase;
-  font-size: 2.5em;
-  line-height: 1em;
+@media (max-width: 991px) {
+  .card {
+    width: auto;
+    max-width: 350px;
+    align-items: flex-start;
+  }
+
+  .card:hover {
+    height: 550px;
+  }
+
+  .card:hover .product_img {
+    top: initial;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(1);
+    height: 250px;
+  }
+
+  .card:hover p {
+    width: 100%;
+  }
 }
 
-.content .turtleh2 {
-  color: rgb(91, 197, 118);
-  text-transform: uppercase;
-  font-size: 2.5em;
-  line-height: 1em;
-}
-
-.content .pandah2 {
-  color: rgb(1, 2, 1);
-  text-transform: uppercase;
-  font-size: 2.5em;
-  line-height: 1em;
-}
-
-.content .sharkh2 {
-  color: rgb(11, 182, 235);
-  text-transform: uppercase;
-  font-size: 2.5em;
-  line-height: 1em;
+.card .content {
+  width: 100%;
+  left: 0;
+  padding: 40px;
 }
 
 /*
@@ -1107,23 +1191,23 @@ END OPTIONNAL NAV BAR
 .reviews {
   background: rgb(197, 239, 199);
   background-size: auto;
+  text-align: center;
+  font-family: "edo", sans-serif;
 }
 
 .containercarousel {
-  width: 80%;
-  margin: 20px auto;
+  width: 100%;
+  margin: auto;
 }
 .carousel {
-  border: 2px solid #fad584fd;
   overflow: hidden;
   position: relative;
-  border-radius: 10px;
   background-color: rgb(197, 239, 199);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1em;
 }
 .slidercarousel {
   display: flex;
-  height: 100%;
+  height: 60vh;
   width: 400%;
 }
 .slidercarousel section {
@@ -1135,28 +1219,32 @@ END OPTIONNAL NAV BAR
 }
 
 .profil1 img {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
-  contain: content;
+  width: 200px;
+  clip-path: ellipse(35% 50%);
+  margin-bottom: 3em;
 }
+
 .profil2 img {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
+  width: 200px;
+  clip-path: ellipse(45% 50%);
+  max-width: 80%;
+  max-height: 80%;
+  margin-bottom: 3em;
 }
+
 .profil3 img {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
+  width: 200px;
+  clip-path: ellipse(30% 50%);
+  margin-bottom: 4em;
 }
 .profil4 img {
-  height: 50%;
-  width: 50%;
-  border-radius: 50%;
+  width: 200px;
+  clip-path: ellipse(50% 30%);
+  max-width: 70%;
+  max-height: 70%;
 }
+
 .profil1 {
-  max-height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1164,7 +1252,6 @@ END OPTIONNAL NAV BAR
 }
 
 .profil2 {
-  max-height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1172,7 +1259,6 @@ END OPTIONNAL NAV BAR
 }
 
 .profil3 {
-  max-height: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1180,8 +1266,6 @@ END OPTIONNAL NAV BAR
 }
 
 .profil4 {
-  max-height: 85%;
-  max-width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1195,6 +1279,7 @@ END OPTIONNAL NAV BAR
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  font-size: 2rem;
 }
 
 .left {
@@ -1224,4 +1309,13 @@ END OPTIONNAL NAV BAR
 }
 .controlcarousel ul li.selected {
   background: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  .containercarousel {
+    height: 400px;
+  }
+  .slidercarousel {
+    height: 400px;
+  }
 }
