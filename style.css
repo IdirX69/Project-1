@@ -837,6 +837,9 @@ footer input::placeholder {
   opacity: 1;
   z-index: 0;
 }
+.best-seller {
+  display: none;
+}
 
 @keyframes beer-paragraph-anim {
   from {
@@ -1469,17 +1472,6 @@ END OPTIONNAL NAV BAR
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.267);
   }
-  .h33 {
-    display: flex;
-    padding-top: 3rem;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-  }
-  .h33 h3 {
-    font-size: 5rem;
-    font-family: "Quicksand", sans-serif;
-  }
 
   .beer-presentation div p {
     color: rgb(255, 255, 255);
@@ -1513,6 +1505,41 @@ END OPTIONNAL NAV BAR
   }
   .beer-presentation .beer-article {
     transition: 0.5s;
+  }
+  .best-seller h3 {
+    padding: 1.5rem;
+    height: 100px;
+    width: 40vw;
+    border-radius: 25px;
+    margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(
+      90deg,
+      var(--turtle-color),
+      var(--bee-color),
+      var(--fox-color)
+    );
+    color: rgba(255, 255, 255, 0.74);
+    font-family: "edo", sans-serif;
+    margin-top: 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
+  }
+  .best-seller img {
+    justify-content: center;
+    height: 150px;
+    width: 200px;
+    padding: 1 5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+    margin-right: 3rem;
+    position: relative;
+  }
+  .best-seller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1024px) {
