@@ -180,6 +180,10 @@ nav {
   padding: 1em;
 }
 
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
 .burger {
   display: none;
 }
@@ -192,28 +196,22 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 1033px) {
+@media screen and (max-width: 1450px) {
   body {
     overflow-x: hidden;
   }
 
   .nav-links {
-    position: absolute;
     right: 0px;
     height: 100vh;
+    position: absolute;
     top: 0;
     background-color: rgb(245, 225, 209);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    transform: translateX(500px);
+    transform: translateX(3000px);
     transition: transform 0.5s ease-in;
     z-index: 1000;
   }
@@ -288,7 +286,8 @@ nav {
 /*HEADER*/
 
 header {
-  height: 100vh;
+  padding-top: 5em;
+  height: 110vh;
   width: 100%;
   background-color: rgb(245, 225, 209);
   background-image: url("img/Green\ Brown\ Nature\ World\ Wildlife\ Conservation\ Day\ Printable\ Flyer\ \(1\).svg");
@@ -612,7 +611,7 @@ h1 {
 
 footer {
   background-color: var(--turtle-color);
-  height: 80vh;
+  height: 100vh;
   background-image: url(img/bg-01.png);
   background-size: cover;
 }
@@ -908,13 +907,14 @@ footer input::placeholder {
 /*CARD*/
 
 .our-flavours {
-  background-image: url("img/lol.jpg");
+  background-color: #fff;
   background-size: cover;
+  padding-top: 8vh;
 }
 
 .container-card {
   margin: 0 auto;
-  width: 80vw;
+  width: 75vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -986,6 +986,10 @@ footer input::placeholder {
   transition: 0.5s;
 }
 
+.rec-box {
+  box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
+}
+
 .rec-bee {
   background: rgb(243, 220, 16);
 }
@@ -1033,14 +1037,36 @@ footer input::placeholder {
   text-align: center;
 }
 
+.test p i {
+  color: #fff;
+
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 1em;
+  z-index: 10;
+  rotate: -15deg;
+  left: 1em;
+  animation: cursor 0.5s ease 0s infinite alternate forwards;
+}
+
+@keyframes cursor {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .test button {
-  color: #111;
-  background: #fff;
+  color: #fff;
+  background: #111;
   padding: 10px 20px;
   border-radius: 10px;
   font-weight: bold;
   border: none;
-  margin-bottom: 4em;
+  margin-top: 5em;
   cursor: pointer;
   font-size: 1rem;
 }
@@ -1368,19 +1394,22 @@ END OPTIONNAL NAV BAR
     align-items: center;
     justify-content: space-around;
     flex-direction: row-reverse;
+    max-width: 100vw;
   }
   .beer-presentation article {
     height: 70vh;
     border-radius: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 26vw;
     box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
+    width: 25vw;
   }
+
   .beer-presentation .wild-fox p {
     animation: none;
   }
+
   .wild-fox {
     flex-direction: row-reverse;
     background-image: none;
@@ -1396,19 +1425,36 @@ END OPTIONNAL NAV BAR
   }
 
   .beer-presentation div {
-    height: 75vh;
+    height: 70vh;
+    width: 15vw;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.301);
+    background-color: rgba(255, 255, 255, 0.267);
+  }
+  .h33 {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+  .h33 h3 {
+    font-size: 5rem;
+    font-family: "Quicksand", sans-serif;
   }
 
   .beer-presentation div p {
     color: rgb(255, 255, 255);
     line-height: 1.5rem;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
     height: 50vh;
     font-size: 1.2rem;
     text-align: justify;
-    max-width: 15vw;
+    width: 9.5vw;
+    font: color white;
+    text-shadow: 1px 1px 0 #969696, 1px 1px 1px #aba8a8;
+  }
+  .beer-presentation .turtle-img-pres {
+    transform: translateX(0px);
   }
 
   .beer-presentation .beer-article {
@@ -1420,20 +1466,25 @@ END OPTIONNAL NAV BAR
     font-size: 3rem;
     line-height: 3rem;
     color: rgb(255, 255, 255);
+    width: 50%;
   }
-  .beer-article h2 .beer-presentation .best-sceller {
-    position: relative;
-    border: solid 3px red;
-    height: 20vh;
-    width: 100vw;
+  .beer-presentation .beer-article:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+  }
+  .beer-presentation .beer-article {
+    transition: 0.5s;
+  }
+  .beer-presentation {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .containercarousel {
+    height: 400px;
   }
 
-  @media screen and (min-width: 1024px) {
-    .containercarousel {
-      height: 400px;
-    }
-    .slidercarousel {
-      height: 400px;
-    }
+  .slidercarousel {
+    height: 400px;
   }
 }

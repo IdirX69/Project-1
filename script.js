@@ -72,8 +72,8 @@ const beeP = document.querySelector(".bee-paragraph");
 
 // Resolution is 1024x768 or above
 
-window.addEventListener("scroll", () => {
-  if (window.matchMedia("(max-width: 1200px)").matches) {
+if (window.matchMedia("(max-width: 1200px)").matches) {
+  window.addEventListener("scroll", () => {
     if (window.scrollY > 980) {
       turtleImg.style.animation = "beer-anim-img normal 2s forwards";
     } else {
@@ -106,8 +106,8 @@ window.addEventListener("scroll", () => {
     } else {
       beeP.style.animation = "none";
     }
-  }
-});
+  });
+}
 
 const bubbleMaker = () => {
   const bubble = document.createElement("span");
