@@ -1261,11 +1261,31 @@ END OPTIONNAL NAV BAR
   background: rgb(197, 239, 199);
   background-size: auto;
   text-align: center;
-  font-family: "edo", sans-serif;
 }
 
+.carousel h2 {
+  font-family: "edo", sans-serif;
+}
 .containercarousel {
+  width: 100vw;
   margin: auto;
+}
+.carousel {
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(197, 239, 199);
+}
+.slidercarousel {
+  display: flex;
+  height: 60vh;
+  width: 400%;
+}
+.slidercarousel section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
 }
 
 .carousel {
@@ -1385,6 +1405,25 @@ END OPTIONNAL NAV BAR
 .controlcarousel ul li.selected {
   background: transparent;
 }
+.containerabout {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: center;
+}
+
+.photoabout {
+  height: 10em;
+
+  background-image: url(./image_review/femme4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50vw;
+}
+
+.textabout {
+  width: 50vw;
+}
 
 /*Beer preseantation Media Queries 1280px*/
 @media screen and (min-width: 1280px) {
@@ -1475,9 +1514,6 @@ END OPTIONNAL NAV BAR
   .beer-presentation .beer-article {
     transition: 0.5s;
   }
-  .beer-presentation {
-    display: flex;
-  }
 }
 @media screen and (min-width: 1024px) {
   .containercarousel {
@@ -1486,5 +1522,15 @@ END OPTIONNAL NAV BAR
 
   .slidercarousel {
     height: 400px;
+
+    @media screen and (min-width: 1024px) {
+      .containercarousel {
+        height: 400px;
+      }
+
+      .slidercarousel {
+        height: 400px;
+      }
+    }
   }
 }
