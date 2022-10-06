@@ -55,10 +55,10 @@
       </div>
       <ul class="nav-links">
         <h4 class="logo-titre-nav">Wild Beer</h4>
-        <li><a href="#">HOME</a></li>
+        <li><a href="#">ACCUEIL</a></li>
         <li><a href="#">BEST SELLERS</a></li>
-        <li><a href="#">NOS BIERES</a></li>
-        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">NOTRE CATALOGUE</a></li>
+        <li><a href="#">A PROPOS DE NOUS</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
       <div class="burger">
@@ -68,6 +68,7 @@
       </div>
     </nav>
     <header>
+
 
       <button type="button" aria-label="toggle curtain navigation" class="nav-toggler">
         <span class="line l1"></span>
@@ -88,12 +89,12 @@
         <img class="turtle-img" src="img/bottles/turtle.png" alt="">
       </div>
       <button class="btn-main btn-hover">NOS PRODUITS</button>
-    </header>
+    </header class="panel">
 
 
     <main>
 
-      <section class="beer-presentation">
+      <section class="beer-presentation panel">
         <article class="wild-fox beer-article">
           <img src="./img/1.png" class="fox-img-pres" alt="" />
           <div>
@@ -130,7 +131,7 @@
       </section>
 
 
-      <section class="our-flavours">
+      <section class="our-flavours panel">
         <!--  CODE OPTIONNEL NAV BAR / VOIR CSS 
     <input type="checkbox" id="active">
   <label for="active" class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></label>
@@ -263,9 +264,9 @@
           </div>
         </div>
       </section>
-      <section class="about-us"></section>
+      <section class="about-us panel"></section>
 
-      <section class="reviews">
+      <section class="reviews panel">
 
         <div class="containercarousel">
 
@@ -322,9 +323,32 @@
           </div>
         </div>
       </section>
-      <section></section>
+      <section class="quizz panel">
+        <div class="welcome-screen">
+          <h2>Tu veux savoir quelle bière Wild te correspond le mieux ?</h2>
+          <h3>Démarre le quizz !</h3>
+          <button>Démarrer</button>
+        </div>
+        <div class="question-screen">
+          <h2 class="question">Quel caractère te correspond le mieux ?</h2>
+          <ul>
+            <li>Discret</li>
+            <li>Timide</li>
+            <li>Entreprenant</li>
+            <li>Organisé</li>
+            <li>Organisé</li>
+            <li>Organisé</li>
+          </ul>
+        </div>
+        <div class="end-screen">
+          <h2>Voici ta bière Wild</h2>
+          <img class="house" src="img/1.png" alt=""></img>
+          <button>Rejouer</button>
+        </div>
 
-      <footer>
+      </section>
+
+      <footer class="panel">
         <div class="container-ft">
           <img src="logo/Wild Beer.svg" alt="">
           <div class="reseau">
@@ -363,6 +387,8 @@
     </main>
     </footer>
     <script src="./script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 </body>
 
 </html>

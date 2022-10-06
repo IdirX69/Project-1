@@ -25,13 +25,15 @@ body {
 .sec-age {
   position: relative;
   min-height: 100vh;
-  background-image: url("img/Shiny.svg");
+  background-image: url("img/gradient-mountain-landscape/6276023.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
+
+
 
 .sec-age .container {
   position: relative;
@@ -158,13 +160,13 @@ nav {
   color: white;
   font-family: "edo", sans-serif;
   letter-spacing: 5px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 60%;
 }
 
 .nav-links li {
@@ -176,7 +178,7 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   padding: 1em;
 }
 
@@ -206,7 +208,7 @@ nav {
     height: 100vh;
     position: absolute;
     top: 0;
-    background-color: rgb(245, 225, 209);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,7 +292,7 @@ header {
   height: 110vh;
   width: 100%;
   background-color: rgb(245, 225, 209);
-  background-image: url("img/Green\ Brown\ Nature\ World\ Wildlife\ Conservation\ Day\ Printable\ Flyer\ \(1\).svg");
+  background-image: url("img/gradient-mountain-landscape/6276023.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -453,6 +455,7 @@ h1 {
 }
 
 @keyframes myAnimBis2 {
+
   0%,
   100% {
     transform: translateX(0%);
@@ -495,6 +498,7 @@ h1 {
 }
 
 @keyframes myAnimBis {
+
   0%,
   100% {
     transform: translateX(0%);
@@ -546,6 +550,7 @@ h1 {
 }
 
 @keyframes myAnimBis3 {
+
   0%,
   100% {
     transform: translateX(0%);
@@ -749,6 +754,10 @@ footer input::placeholder {
 
 /*STARTS Beer presentation STARTS*/
 
+.beer-presentation {
+  background-image: url('img/mousse.png');
+}
+
 .title-beer-presentation {
   font-size: 2rem;
 }
@@ -910,7 +919,6 @@ footer input::placeholder {
   background-color: #fff;
   background-size: cover;
   padding-top: 8vh;
-  ;
 }
 
 .container-card {
@@ -953,7 +961,7 @@ footer input::placeholder {
 
 .card .test {
   display: flex;
-  z-index: 9000;
+  z-index: 3000;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -1404,6 +1412,7 @@ END OPTIONNAL NAV BAR
     justify-content: space-around;
     flex-direction: row-reverse;
   }
+
   .beer-presentation article {
     height: 70vh;
     border-radius: 50px;
@@ -1428,6 +1437,7 @@ END OPTIONNAL NAV BAR
     background-color: var(--turtle-color);
     flex-direction: row-reverse;
   }
+
   .wild-bee {
     background-color: var(--bee-color);
   }
@@ -1458,6 +1468,7 @@ END OPTIONNAL NAV BAR
     line-height: 3rem;
     color: rgb(255, 255, 255);
   }
+
   .beer-article h2 .beer-presentation .best-sceller {
     position: relative;
     border: solid 3px red;
@@ -1474,4 +1485,138 @@ END OPTIONNAL NAV BAR
       height: 400px;
     }
   }
+}
+
+
+/*QUIZZ*/
+
+
+.quizz {
+  height: 100vh;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-screen,
+.question-screen,
+.end-screen {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #2bc064;
+  border-radius: 2em;
+  box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
+  background: url('img/peaceful-hill-forest-tree-mountains-rock-beautiful-landscape-outdoors-adventure-green-boat-illustration/Scene-31.jpg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+.welcome-screen {
+  flex-direction: column;
+
+}
+
+.welcome-screen h2,
+h3 {
+  color: white;
+  font-family: 'edo';
+  font-size: 2.7rem;
+  margin-bottom: 1em;
+}
+
+.question-screen,
+.end-screen {
+  display: none;
+}
+
+.end-screen img {
+  max-width: 8vw;
+  max-height: 15vh;
+  animation: myAnimImg 1s ease 0s 1 normal forwards;
+}
+
+
+@keyframes myAnimImg {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.welcome-screen button {
+  color: rgb(52, 51, 51);
+  background: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  margin-top: 3em;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+
+.welcome-screen button,
+.end-screen button {
+  color: rgb(52, 51, 51);
+  background: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 1em;
+}
+
+.welcome-screen button:hover,
+.end-screen button:hover {
+  background: orange;
+}
+
+.question-screen h2 {
+
+  color: #f1f1f1;
+  background-color: #111;
+  border-radius: 2em;
+  margin-bottom: 2em;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.8em;
+  width: 80%;
+}
+
+.end-screen h2 {
+  color: white;
+  font-family: 'edo';
+  font-size: 2.7rem;
+  margin-bottom: 1em;
+  margin-top: 0.7em;
+}
+
+.question-screen li {
+  list-style: none;
+  border: black solid 2px;
+  border-radius: 1em;
+  background: white;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 1em;
+  padding: 1em;
+  font-weight: bold;
+}
+
+.question-screen li:hover {
+  background: rgb(212, 171, 59);
 }
