@@ -131,10 +131,14 @@ setInterval(bubbleMaker, 200);
 
 //caroussel
 
-const left = document.querySelector(".left");
-const right = document.querySelector(".right");
+let slides = document.querySelectorAll(".slide-container");
+let index = 0;
 
-const slider = document.querySelector(".slidercarousel");
+function next() {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}
 
 const indicatorParent = document.querySelector(".controlcarousel ul");
 const indicators = document.querySelectorAll(".controlcarousel li");
@@ -420,25 +424,4 @@ window.addEventListener('load', init);
 
 
 
-//TRANSITION PAGE
-
-
-// window.onload = function () {
-//   const controller = new ScrollMagic.Controller({
-//     globalSceneOptions: {
-//       triggerHook: 'onLeave'
-//     }
-//   });
-
-//   const slides = document.querySelectorAll(".panel");
-
-//   for (let i = 0; i < slides.length; i++) {
-//     new ScrollMagic.Scene({
-//       triggerElement: slides[i]
-//     })
-//       .setPin(slides[i])
-//       .addIndicators()
-//       .addTo(controller);
-//   }
-// }
 
