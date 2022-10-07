@@ -32,10 +32,9 @@
         <div class="formBx">
           <form action="">
             <div class="logo logo-verif">
-              <img class="logo-img rotate" src="logo/capsule.svg" alt="">
-              <img class="logo-text" src="logo/logotext.svg" alt="">
+              <img class="logo-img" src=" logo/Wild Beer.svg" alt="">
             </div>
-            <h2>Avez-vous au moins 18 ans ?</h2>
+            <h2>Avez-vous 18 ans ou plus ?</h2>
             <div class="btnBx">
               <div class="button btn-1">OUI</div>
               <div class="button btn-2">NON</div>
@@ -55,11 +54,11 @@
       </div>
       <ul class="nav-links">
         <h4 class="logo-titre-nav">Wild Beer</h4>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">BEST SELLERS</a></li>
-        <li><a href="#">NOS BIERES</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#home">ACCUEIL</a></li>
+        <li><a href="#bs">BEST SELLERS</a></li>
+        <li><a href="#product">NOTRE CATALOGUE</a></li>
+        <li><a href="#aboutUs">QUI SOMMES NOUS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -67,7 +66,10 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <header>
+
+    <header id="home">
+
+
 
       <button type="button" aria-label="toggle curtain navigation" class="nav-toggler">
         <span class="line l1"></span>
@@ -87,7 +89,8 @@
         <img class="fox-img" src="img/bottles/fox.png" alt="">
         <img class="turtle-img" src="img/bottles/turtle.png" alt="">
       </div>
-      <button class="btn-main btn-hover">NOS PRODUITS</button>
+      <button class="btn-main btn-hover"><a href="#product">NOS PRODUITS</a></button>
+
     </header>
 
 
@@ -103,8 +106,8 @@
           <div>
             <h2>Wild Fox</h2>
             <p class="fox-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-              error dolore et rerum in ad facilis eveniet placeat, vel fugit!
+              India Pale Ale : forte amertume et arome intense d'agrume, une bière redécouverte par les britaniques qui
+              nous l'on offerte au 19ème siècle. pleine d'espièglerie il faut la goûter pour la savourer. #wildfox
             </p>
           </div>
         </article>
@@ -114,41 +117,29 @@
           <div>
             <h2>Wild Bee</h2>
             <p class="bee-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-              error dolore et rerum in ad facilis eveniet placeat, vel fugit!
+              Bière Lager, blonde classique à fermentation basse, vous serez emporté par ses notes florales et sa légère
+              amertume. Virevoltez dans les jardins avec les abeilles. #wildbee
             </p>
           </div>
         </article>
+
 
         <article class="wild-turtle beer-article">
           <img src="./img/3.png" class="turtle-img-pres" alt="wild turtle beer" />
           <div>
             <h2>Wild Turtle</h2>
             <p class="turtle-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-              error dolore et rerum in ad facilis eveniet placeat, vel fugit!
+              Bière de garde, fermentée en cuve et embouteillée par nos soins, vous serez bercé par ses notes de
+              caramel. Vielle de plusieurs années, son animal spirituelle est la force marine. #wildturtle
             </p>
           </div>
         </article>
-
       </section>
 
 
-      <section class="our-flavours">
-        <!--  CODE OPTIONNEL NAV BAR / VOIR CSS 
-    <input type="checkbox" id="active">
-  <label for="active" class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></label>
-  <div class="wrapper">
-      
-      <ul class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Best Sellers</a></li>
-          <li><a href="#">Ours Flavours</a></li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-      
-  </div> -->
+
+      <section id="product" class="our-flavours ">
+
         <h2>Nos bières</h2>
         <div class="container-card">
           <div class="card">
@@ -162,10 +153,8 @@
             </div>
             <div class="content">
               <h3>Wild Bee</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, impedit! Deserunt ullam harum rerum
-                eveniet dolorem enim ipsam quia laboriosam doloremque sequi cumque quisquam iure maxime doloribus
-                maiores,
-                error eligendi.</p>
+              <p>Bière Lager, blonde classique à fermentation basse, vous serez emporté par ses notes
+                florales et sa légère amertume. Virevoltez dans les jardins avec les abeilles. <span>#wildbee</span></p>
             </div>
             <img src="img/2.png" alt="" class="product_img">
           </div>
@@ -176,16 +165,15 @@
                 <button>Explore</button>
                 <p><i class="fa-solid fa-hand-pointer"></i></p>
               </div>
-              <img src="img/2.png" alt="" class="card-logo">
+              <img src="img/1.png" alt="" class="card-logo">
             </div>
             <div class="content">
               <h3>Wild Fox</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, impedit! Deserunt ullam harum rerum
-                eveniet dolorem enim ipsam quia laboriosam doloremque sequi cumque quisquam iure maxime doloribus
-                maiores,
-                error eligendi.</p>
+              <p>India Pale Ale : forte amertume et arome intense d'agrume, une bière redécouverte par les
+                britaniques qui nous l'on offerte au 19ème siècle. Pleine d'espièglerie il faut la goûter pour la
+                savourer ! <span>#wildfox</span></p>
             </div>
-            <img src="img/2.png" alt="" class="product_img">
+            <img src="img/1.png" alt="" class="product_img">
           </div>
           <div class="card">
             <div class="rec-box rec-turtle">
@@ -194,16 +182,16 @@
                 <button>Explore</button>
                 <p><i class="fa-solid fa-hand-pointer"></i></p>
               </div>
-              <img src="img/2.png" alt="" class="card-logo">
+              <img src="img/3.png" alt="" class="card-logo">
             </div>
             <div class="content">
               <h3>Wild Turtle</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, impedit! Deserunt ullam harum rerum
-                eveniet dolorem enim ipsam quia laboriosam doloremque sequi cumque quisquam iure maxime doloribus
-                maiores,
-                error eligendi.</p>
+              <p>Bière de garde, fermentée en cuve et embouteillée par nos soins, vous serez bercé par ses
+                notes de caramel. Vielle de plusieurs années, son animal spirituelle est la force marine.
+                <span>#wildturtle</span>
+              </p>
             </div>
-            <img src="img/2.png" alt="" class="product_img">
+            <img src="img/3.png" alt="" class="product_img">
           </div>
 
 
@@ -215,16 +203,16 @@
                 <button>Explore</button>
                 <p><i class="fa-solid fa-hand-pointer"></i></p>
               </div>
-              <img src="img/2.png" alt="" class="card-logo">
+              <img src="img/4.png" alt="" class="card-logo">
             </div>
             <div class="content">
               <h3>Wild Shark</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, impedit! Deserunt ullam harum rerum
-                eveniet dolorem enim ipsam quia laboriosam doloremque sequi cumque quisquam iure maxime doloribus
-                maiores,
-                error eligendi.</p>
+              <p>Bière blanche, acidité et fraicheur sont le crédo de cette bière très effervescante. D'origine
+                Australienne nous avons pu maîtriser son processus de fabrication si particulier et si
+                sauvage. <span>#wildshark</span>
+              </p>
             </div>
-            <img src="img/2.png" alt="" class="product_img">
+            <img src="img/4.png" alt="" class="product_img">
           </div>
 
           <div class="card">
@@ -234,17 +222,14 @@
                 <button>Explore</button>
                 <p><i class="fa-solid fa-hand-pointer"></i></p>
               </div>
-              <img src="img/2.png" alt="" class="card-logo">
+              <img src="img/5.png" alt="" class="card-logo">
             </div>
             <div class="content">
               <h3>Wild Panda</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, impedit! Deserunt ullam harum
-                rerum
-                eveniet dolorem enim ipsam quia laboriosam doloremque sequi cumque quisquam iure maxime doloribus
-                maiores,
-                error eligendi.</p>
+              <p>Bière brune d'importation japonaise, découvrez un gout fumé et grâce au malt torréfié un gout de café
+                léger. Voyagez au pays du soleil levant ! <span>#wildpanda</span></p>
             </div>
-            <img src="img/2.png" alt="" class="product_img">
+            <img src="img/5.png" alt="" class="product_img">
           </div>
 
           <div class="card">
@@ -254,162 +239,143 @@
                 <button>Explore</button>
                 <p><i class="fa-solid fa-hand-pointer"></i></p>
               </div>
-              <img src="img/2.png" alt="" class="card-logo">
+              <img src="img/6.png" alt="" class="card-logo">
             </div>
             <div class="content">
               <h3>Wild Bear</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, impedit! Deserunt ullam harum rerum
-                eveniet dolorem enim ipsam quia laboriosam doloremque sequi cumque quisquam iure maxime doloribus
-                maiores,
-                error eligendi.</p>
+              <p>Bière triple, haute fermentation, ronde en bouche, produite avec nos levures spéciales, vous
+                retrouverez des saveurs des fruits des bois, habitat naturel du plus grand mammifère d'Europe !
+                <span>#wildbear</span>
+              </p>
             </div>
-            <img src="img/2.png" alt="" class="product_img">
+            <img src="img/6.png" alt="" class="product_img">
           </div>
         </div>
       </section>
-      <div class="divbody">
-        <div class="container-carou">
+
+      <section class="quizz">
+        <div class="welcome-screen">
+          <h2>Quelle Wild Beer choisir ?</h2>
+          <h3>Démarre le quizz !</h3>
+          <button>Démarrer</button>
+        </div>
+        <div class="question-screen">
+          <h2 class="question">Quel caractère te correspond le mieux ?</h2>
+          <ul>
+            <li>Discret</li>
+            <li>Timide</li>
+            <li>Entreprenant</li>
+            <li>Organisé</li>
+            <li>Organisé</li>
+            <li>Organisé</li>
+          </ul>
+        </div>
+        <div class="end-screen">
+          <h2>Voici ta bière Wild</h2>
+          <img class="house" src="img/1.png" alt=""></img>
+          <button>Rejouer</button>
+        </div>
+      </section>
+
+
+      <section class="reviews panel">
+        <div class="divbody">
+          <div class="container-carou">
             <div class="slide-container active">
-                <div class="slide">
-                    <i class="fas fa-quote-right icon"></i>
-                    <div class="user">
-                        <img src="./image_review/customer1.jpg" alt="">
-                        <div class="user-info">
-                            <h3>Johanna Tideman</h3>
-                            <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            </div>
-                        </div>
+              <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                  <img src="./image_review/customer1.jpg" alt="">
+                  <div class="user-info">
+                    <h3>Johanna Tideman</h3>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
                     </div>
-                    <p class="text-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat cumque unde tempora! Laborum, ducimus.</p>
+                  </div>
                 </div>
+                <p class="text-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat cumque unde
+                  tempora! Laborum, ducimus.</p>
+              </div>
             </div>
             <div class="slide-container">
-                <div class="slide">
-                    <i class="fas fa-quote-right icon"></i>
-                    <div class="user">
-                        <img src="./image_review/customer2.jpg" alt="">
-                        <div class="user-info">
-                            <h3>Caimo Strooter</h3>
-                            <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            </div>
-                        </div>
+              <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                  <img src="./image_review/customer2.jpg" alt="">
+                  <div class="user-info">
+                    <h3>Caimo Strooter</h3>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
                     </div>
-                    <p class="text-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat cumque unde tempora! Laborum, ducimus.</p>
+                  </div>
                 </div>
+                <p class="text-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat cumque unde
+                  tempora! Laborum, ducimus.</p>
+              </div>
             </div>
             <div class="slide-container">
-                <div class="slide">
-                    <i class="fas fa-quote-right icon"></i>
-                    <div class="user">
-                        <img src="./image_review/customer3.jpg" alt="">
-                        <div class="user-info">
-                            <h3>Freddy Hercheul</h3>
-                            <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            </div>
-                        </div>
+              <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                  <img src="./image_review/customer3.jpg" alt="">
+                  <div class="user-info">
+                    <h3>Freddy Hercheul</h3>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat cumque unde tempora! Laborum, ducimus.</p>
+                  </div>
                 </div>
+                <p class="text-user">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad placeat cumque unde
+                  tempora! Laborum, ducimus.</p>
+              </div>
             </div>
             <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
             <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
-        </div>
-        
-    </div>
-      <!-- <section class="reviews">
-
-        <div class="containercarousel">
-
-          <div class="carousel">
-            <h2>Vos avis les plus sauvages!</h2>
-            <div class="slidercarousel">
-              <section>
-                <div class="profil1">
-                  <div class="photoprofil1">
-                  <img src="image_review/homme3.jpg" alt="photo homme3">
-                </div>
-                    <h3>Jamais je n'ai connu tel plaisir #wildturtle.</h3>
-                </div>
-              </section>
-              <section>
-                <div class="profil2">
-                  <div class="photoprofil2">
-                    <img src="image_review/femme4.jpg" alt="photo femme 1">
-                  </div>
-                  <h3>Un délice, je vais pouvoir briller en société! #bewild</h3>
-                </div>
-              </section>
-              <section>
-                <div class="profil3">
-                  <div class="photoprofil3">
-                    <img src="image_review/homme4.jpg" alt="photo homme 2">
-                  </div>
-                  <h3>Je ne m'attendais a rien et je suis extremement satisfait. #wildfox</h3>
-
-                </div>
-              </section>
-              <section>
-                <div class="profil4">
-                  <div class="photoprofil4">
-                    <img src="image_review/femme2.jpg" alt="photo femme 2">
-                  </div>
-                  <h3>De la frappe! #wildbee</h3>
-                </div>
-              </section>
-            </div>
-            <div class="controlcarousel">
-              <span class="arrow left">
-                
-                  </span>
-                  <span class="arrow right">
-                    >
-                  </span>
-                  <ul>
-                    <li class="selected"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-            </div>
           </div>
-        </div> 
-      </section> -->
-      <section class = about-us>
-        
+
+        </div>
+      </section>
+
+
+
+
+      <section class=about-us id="aboutUs">
+        <h2>
+          Qui sommes-nous ?
+        </h2>
+
         <div class="containerabout">
+
           <div class="photoabout">
           </div>
           <div class="textabout">
-            <h2>
-              About-Us
-            </h2>
+
             <h4>
-            Nouvelle génération des meilleurs brasseurs de france. Tout droit sorti de la Wild Boose School
-            Gaëlle, Idir, Sahrane et Quentin sont vos nouveaux meilleurs brasseurs de la région Lyonnaise.
-            Des des semaines d'apprentissages, du savoir millénaire, un résultat époustouflant!
-            Houblonnées, acidulées, douces, fortes, simples nos bières reflètent les personnalités d'animaux emblématique.
-            Et vous? Quel est votre coté Wild?
+              Nouvelle génération des meilleurs brasseurs de france. Tout droit sorti de la Wild Boose School
+              Gaëlle, Idir, Sahrane et Quentin sont vos nouveaux meilleurs brasseurs de la région Lyonnaise.
+              Des des semaines d'apprentissages, du savoir millénaire, un résultat époustouflant!
+              Houblonnées, acidulées, douces, fortes, simples nos bières reflètent les personnalités d'animaux
+              emblématique.
+              Et vous? Quel est votre coté Wild?
             </h4>
           </div>
         </div>
       </section>
 
-      <footer>
+
+      <footer id="contact">
         <div class="container-ft">
           <img src="logo/Wild Beer.svg" alt="">
           <div class="reseau">
@@ -448,6 +414,8 @@
     </main>
     </footer>
     <script src="./script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 </body>
 
 </html>

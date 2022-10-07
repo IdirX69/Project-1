@@ -143,6 +143,329 @@ document.addEventListener("scroll", () => {
 
 //caroussel
 
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+
+const slider = document.querySelector(".slidercarousel");
+
+const indicatorParent = document.querySelector(".controlcarousel ul");
+const indicators = document.querySelectorAll(".controlcarousel li");
+index = 0; /*definition d'une position 0 de la slide visible*/
+
+indicators.forEach((indicator, i) => {
+  indicator.addEventListener("click", () => {
+    document
+      .querySelector(".controlcarousel .selected")
+      .classList.remove(
+        "selected"
+      ); /*déplace le statut "selected" d'un bouton a l'autre*/
+    indicator.classList.add("selected");
+    slider.style.transform = "translateX(" + i * -25 + "%)";
+    index = i;
+  });
+});
+
+left.addEventListener("click", function () {
+  index =
+    index > 0
+      ? index - 1
+      : 0; /*condition empechant d'utiliser le slider si l'on depasse pas le permier avis*/
+  document
+    .querySelector(".controlcarousel .selected")
+    .classList.remove(
+      "selected"
+    ); /*déplace le statut "selected" d'un bouton a l'autre*/
+  indicatorParent.children[index].classList.add(
+    "selected"
+  ); /*synchonise l'action de la fleche et le status selected du bouton*/
+  slider.style.transform =
+    "translateX(" +
+    index * -25 +
+    "%)"; /*event et fonction pour glisser le slider de 25% car 
+    4 avis utilisation concatenation*/
+});
+
+right.addEventListener("click", function () {
+  index =
+    index < 4 - 1
+      ? index + 1
+      : 3; /*condition empechant d'utiliser le slider si l'on depasse pas le dernier avis*/
+  document
+    .querySelector(".controlcarousel .selected")
+    .classList.remove(
+      "selected"
+    ); /*déplace le statut "selected" d'un bouton a l'autre*/
+  indicatorParent.children[index].classList.add(
+    "selected"
+  ); /*synchonise l'action de la fleche et le status selected du bouton*/
+  slider.style.transform =
+    "translateX(" +
+    index * -25 +
+    "%)"; /*event et fonction pour glisser le slider de 25% car 
+    4 avis utilisation concatenation*/
+});
+
+//QUIZZ
+
+const els = {
+  welcomeScreen: null,
+  questionScreen: null,
+  endScreen: null,
+  welcomeBtn: null,
+  answers: null,
+  endBtn: null,
+  answersContainer: null,
+};
+
+let questionIndex = 0;
+
+const questions = [
+  {
+    question:
+      "Vous dormiez jusqu’au moment où un moustique est venu voler juste au-dessus de votre lit :",
+    answers: [
+      {
+        title: "Armé(e) de votre chaussure, vous tapez tous azimuts",
+        house: "WildBear",
+      },
+      {
+        title: "Vous allez dormir ailleurs",
+        house: "WildShark",
+      },
+      {
+        title: "Vous allumez la lumière dans la pièce à côté pour l'y attirer",
+        house: "WildFox",
+      },
+      {
+        title: "Vous attendez qu'il se pose et vous le tuez",
+        house: "WildPanda",
+      },
+      {
+        title:
+          "Vous filez chercher de la bombe anti-moustiques et vous en aspergez la chambre",
+        house: "WildBee",
+      },
+      {
+        title:
+          "Vous vous enfoncez dans votre lit sans laisser dépasser un centimère de peau",
+        house: "WildTurtle",
+      },
+    ],
+  },
+  {
+    question:
+      "Ce qui vous fascine le plus lorsque vous regardez un feu dans une cheminée :",
+    answers: [
+      {
+        title: "La chaleur qui s'en dégage",
+        house: "WildPanda",
+      },
+      {
+        title: "La couleur des flammes et leurs mille nuances",
+        house: "WildTurtle",
+      },
+      {
+        title: "La musique du feu, son crépitement",
+        house: "WildFox",
+      },
+      {
+        title: "La puissance du feu",
+        house: "WildBear",
+      },
+      {
+        title: "La valse des flammes, leur danse",
+        house: "WildBee",
+      },
+      {
+        title: "Le côté vivant avec son mouvement permanent",
+        house: "WildShark",
+      },
+    ],
+  },
+  {
+    question:
+      "Selon vous, la qualité primordiale pour qu’un homme politique reste longtemps au pouvoir :",
+    answers: [
+      {
+        title: "Sa capacité à encaisser des coups",
+        house: "WildTurtle",
+      },
+      {
+        title: "Sa détermination",
+        house: "WildPanda",
+      },
+      {
+        title: "Sa force de caractère",
+        house: "WildBear",
+      },
+      {
+        title: "Sa perspicacité dans le choix de ses collaborateurs",
+        house: "WildBee",
+      },
+      {
+        title: "Son énergie hors norme",
+        house: "WildShark",
+      },
+      {
+        title: "Son intelligence hors pair",
+        house: "WildFox",
+      },
+    ],
+  },
+  {
+    question: "Lorsque vous êtes à bout, vous avez envie :",
+    answers: [
+      {
+        title: "D'aller vous cacher dans un trou de souris",
+        house: "WildTurtle",
+      },
+      {
+        title: "De crier pour vous défouler",
+        house: "WildBear",
+      },
+      {
+        title: "De dire tout haut ce que vous pensez tout bas",
+        house: "WildShark",
+      },
+      {
+        title: "De dormir pour tout oublier",
+        house: "WildPanda",
+      },
+      {
+        title: "De partir à l'autre bout de la terre",
+        house: "WildBee",
+      },
+      {
+        title: "De tout envoyer promener",
+        house: "WildFox",
+      },
+    ],
+  },
+  {
+    question: "Ce qu’il peut vous arriver d’envier aux animaux :",
+    answers: [
+      {
+        title: "Ils ne sont pas obligés de travailler",
+        house: "WildPanda",
+      },
+      {
+        title: "Ils ne sont pas obligés d'obéir",
+        house: "WildShark",
+      },
+      {
+        title: "Ils n'ont pas de problème d'argent",
+        house: "WildFox",
+      },
+      {
+        title: "Ils ont moins de problèmes relationnels",
+        house: "WildTurtle",
+      },
+      {
+        title: "Ils sont libres",
+        house: "WildBee",
+      },
+      {
+        title: "Ils suivent leur instinct",
+        house: "WildBear",
+      },
+    ],
+  },
+];
+
+const recordedAnswers = [];
+
+const init = () => {
+  console.log("Page has loaded");
+
+  els.welcomeScreen = document.querySelector(".welcome-screen");
+  els.questionScreen = document.querySelector(".question-screen");
+  els.endScreen = document.querySelector(".end-screen");
+  els.welcomeBtn = els.welcomeScreen.querySelector("button");
+  els.endBtn = els.endScreen.querySelector("button");
+  els.answersContainer = els.questionScreen.querySelector("ul");
+
+  els.welcomeBtn.addEventListener("click", () => {
+    displayScreen("question");
+    displayQuestion(questionIndex);
+  });
+  els.endBtn.addEventListener("click", () => {
+    displayScreen("welcome");
+    questionIndex = 0;
+  });
+
+  els.answersContainer.addEventListener("click", ({ target }) => {
+    if (target.tagName !== "LI") {
+      return;
+    }
+    const house = target.getAttribute("data-house");
+    recordedAnswers.push(house);
+
+    questionIndex++;
+
+    if (questionIndex >= questions.length) {
+      calculateScore();
+      displayScreen("end");
+    } else {
+      displayQuestion(questionIndex);
+    }
+  });
+};
+
+const calculateScore = () => {
+  const house = recordedAnswers
+    .sort((a, b) => {
+      return (
+        recordedAnswers.filter((answer) => answer === a).length -
+        recordedAnswers.filter((answer) => answer === b).length
+      );
+    })
+    .pop();
+  // console.log('house', house);
+
+  const houseInFrench = {
+    WildFox: "img/1.png",
+    WildBee: "img/2.png",
+    WildTurtle: "img/3.png",
+    WildShark: "img/4.png",
+    WildPanda: "img/5.png",
+    WildBear: "img/6.png",
+  };
+
+  els.endScreen.querySelector("img").src = houseInFrench[house];
+};
+
+const displayQuestion = (index) => {
+  const currentQuestion = questions[index];
+
+  const questionEl = els.questionScreen.querySelector("h2");
+
+  const answerEls = currentQuestion.answers.map((answer) => {
+    const liEl = document.createElement("li");
+    liEl.textContent = answer.title;
+    liEl.setAttribute("data-house", answer.house);
+    return liEl;
+  });
+
+  questionEl.textContent = currentQuestion.question;
+  els.answersContainer.textContent = "";
+  els.answersContainer.append(...answerEls);
+};
+
+const displayScreen = (screenName) => {
+  // console.log('screenName', screenName);
+  els.welcomeScreen.style.display = "none";
+  els.questionScreen.style.display = "none";
+  els.endScreen.style.display = "none";
+
+  const screen = els[screenName + "Screen"];
+  // console.log('screen', screen);
+  screen.style.display = "flex";
+};
+
+window.addEventListener("load", init);
+
+//caroussel
+
 let slides = document.querySelectorAll(".slide-container");
 let index = 0;
 
