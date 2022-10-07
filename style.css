@@ -15,10 +15,11 @@
   --font-size: 1rem;
 }
 
+
 body {
-  background-color: #fff;
   font-family: "Quicksand", sans-serif;
 }
+
 
 /*section age*/
 
@@ -40,9 +41,9 @@ body {
   width: 800px;
   height: 500px;
   background: #fff;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   border-radius: 2rem;
+  box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
 }
 
 .sec-age .container .user {
@@ -81,14 +82,14 @@ body {
 }
 
 .sec-age .container .user .formBx h2 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 17px;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
   color: #555;
+  font-weight: bold;
 }
 
 .btnBx {
@@ -99,7 +100,7 @@ body {
 
 .logo-verif {
   position: relative;
-  bottom: 3em;
+  bottom: 1em;
 }
 
 .sec-age .container .user .formBx form .button {
@@ -114,7 +115,7 @@ body {
   color: #fff;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
   border-radius: 1em;
@@ -138,6 +139,8 @@ body {
 .btn-1 {
   margin-right: 1em;
 }
+
+
 
 /*MENU NAV*/
 
@@ -208,7 +211,7 @@ nav {
     height: 100vh;
     position: absolute;
     top: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,6 +228,16 @@ nav {
     font-weight: bold;
     font-size: 20px;
     padding: 1em;
+  }
+
+  .nav-links a:hover {
+    background-color: #111;
+    color: white;
+    opacity: 0.8;
+    transition: 0.1s;
+    border-radius: 1em;
+
+
   }
 
   .nav-links li {
@@ -273,6 +286,7 @@ nav {
   }
 }
 
+
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -287,20 +301,23 @@ nav {
 
 /*HEADER*/
 
+
 header {
   padding-top: 5em;
-  height: 110vh;
+  height: 100vh;
   width: 100%;
-  background-color: rgb(245, 225, 209);
   background-image: url("img/gradient-mountain-landscape/6276023.jpg");
   background-size: cover;
   background-position: center;
+
+
 }
 
+
+
 h1 {
-  font-size: 3rem;
+  font-size: 3.8em;
   margin: 0;
-  margin-bottom: 0.4rem;
   font-family: var(--font-main);
   animation-name: focus-in-expand;
   animation-duration: 2s;
@@ -389,7 +406,7 @@ h1 {
 }
 
 .text-header h2 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   margin: 0;
   font-family: var(--font-main);
   animation-name: focus-in-expand2;
@@ -414,26 +431,26 @@ h1 {
 }
 
 .conteneur-img {
-  padding-top: 3em;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   width: 25%;
-  margin-bottom: 4rem;
+
 }
+
 
 .conteneur-img .fox-img {
   position: relative;
-  right: 400px;
-  width: 400px;
-  height: 400px;
+  right: 1500px;
+  width: 8rem;
+  height: 25rem;
   animation: myAnim2 2s ease 0.5s 1 normal forwards,
-    myAnimBis2 4s ease 0.5s 1 normal forwards;
+    myAnimBis2 5s ease 0.5s 1 normal forwards;
 }
 
 @keyframes myAnim2 {
   0% {
-    right: 400px;
+    right: 700px;
     opacity: 0;
     transform: translateX(-250px);
   }
@@ -448,10 +465,10 @@ h1 {
 .conteneur-img .turtle-img {
   position: relative;
   right: 400px;
-  width: 400px;
-  height: 400px;
+  width: 8rem;
+  height: 25rem;
   animation: myAnim 2s ease 0s 1 normal forwards,
-    myAnimBis 4s ease 0s 1 normal forwards;
+    myAnimBis 5s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnimBis2 {
@@ -485,7 +502,7 @@ h1 {
 
 @keyframes myAnim {
   0% {
-    right: 400px;
+    right: 500px;
     opacity: 0;
     transform: translateX(-250px);
   }
@@ -528,16 +545,16 @@ h1 {
 
 .conteneur-img .bee-img {
   position: relative;
-  right: 400px;
-  width: 400px;
-  height: 400px;
+  right: 800px;
+  width: 8rem;
+  height: 25rem;
   animation: myAnim3 2s ease 1s 1 normal forwards,
-    myAnimBis3 4s ease 1s 1 normal forwards;
+    myAnimBis3 5s ease 1s 1 normal forwards;
 }
 
 @keyframes myAnim3 {
   0% {
-    right: 400px;
+    right: 500px;
     opacity: 0;
     transform: translateX(-250px);
   }
@@ -583,14 +600,53 @@ h1 {
   display: block;
   margin: 0 auto;
   background: #292734;
-  color: white;
-  width: 10rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
   border: none;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 2rem;
+  box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
+  border-radius: 0.2rem;
+}
+
+.btn-main a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.btn-main:hover {
+  animation: btnMain 2s ease 0s 1 normal forwards;
+}
+
+@keyframes btnMain {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-3px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(3px);
+  }
+
+  80% {
+    transform: translateX(2px);
+  }
+
+  90% {
+    transform: translateX(-2px);
+  }
 }
 
 .btn-main::after {
@@ -617,7 +673,7 @@ h1 {
 footer {
   background-color: var(--turtle-color);
   height: 100vh;
-  background-image: url(img/bg-01.png);
+  background-image: url(img/footer2.jpg);
   background-size: cover;
 }
 
@@ -754,8 +810,9 @@ footer input::placeholder {
 
 /*STARTS Beer presentation STARTS*/
 
-.beer-presentation {
-  background-image: url('img/mousse.png');
+
+.beer-presentation h2 {
+  font-family: 'edo', sans-serif;
 }
 
 .title-beer-presentation {
@@ -918,7 +975,6 @@ footer input::placeholder {
 .our-flavours {
   background-color: #fff;
   background-size: cover;
-  padding-top: 8vh;
 }
 
 .container-card {
@@ -928,16 +984,27 @@ footer input::placeholder {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
 }
 
 .our-flavours h2 {
   font-family: "edo", sans-serif;
-  color: rgb(41, 40, 40);
+  color: white;
   font-size: 4em;
   line-height: 1em;
   text-align: center;
   padding: 1rem 0rem;
+  background-color: #312f2f;
+  box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
+  margin-bottom: 1em;
+}
+
+.our-flavours p {
+  font-size: 1.1rem;
+}
+
+.our-flavours span {
+  font-weight: bold;
 }
 
 .card {
@@ -1105,7 +1172,8 @@ footer input::placeholder {
 
 .content p {
   color: #fff;
-  width: 80%;
+  width: 75%;
+  font-size: 1.2em;
 }
 
 .card .product_img {
@@ -1124,7 +1192,7 @@ footer input::placeholder {
   transition-delay: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   .card {
     width: auto;
     max-width: 350px;
@@ -1140,50 +1208,235 @@ footer input::placeholder {
     bottom: 30px;
     left: 50%;
     transform: translate(-50%, 0%) scale(1);
-    height: 250px;
+    height: 230px;
   }
 
   .card:hover p {
     width: 100%;
+    font-size: 1.1rem;
   }
 }
 
 .card .content {
   width: 100%;
   left: 0;
-  padding: 40px;
+  padding: 20px;
 }
 
+
+
+/* CSS caroussel */
+
+.reviews {
+  background: rgb(197, 239, 199);
+  background-size: auto;
+  text-align: center;
+}
+
+.carousel h2 {
+  font-family: "edo", sans-serif;
+}
+
+.containercarousel {
+  width: 100vw;
+  margin: auto;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(197, 239, 199);
+}
+
+.slidercarousel {
+  display: flex;
+  height: 60vh;
+  width: 400%;
+}
+
+.slidercarousel section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(197, 239, 199);
+}
+
+.slidercarousel {
+  display: flex;
+  height: 60vh;
+  width: 400%;
+}
+
+.slidercarousel section {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+}
+
+.profil1 img {
+  width: 200px;
+  clip-path: ellipse(35% 50%);
+  margin-bottom: 3em;
+}
+
+.profil2 img {
+  width: 200px;
+  clip-path: ellipse(45% 50%);
+  max-width: 80%;
+  max-height: 80%;
+  margin-bottom: 3em;
+}
+
+.profil3 img {
+  width: 200px;
+  clip-path: ellipse(30% 50%);
+  margin-bottom: 4em;
+}
+
+.profil4 img {
+  width: 200px;
+  clip-path: ellipse(50% 30%);
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.profil1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profil2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profil3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profil4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*CSS des bouttons du caroussel*/
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.controlcarousel ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%);
+}
+
+.controlcarousel ul li {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border: 2px solid #333;
+  border-radius: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.controlcarousel ul li.selected {
+  background: transparent;
+}
+
+
+/*ABOUT US*/
+
+.about-us {
+  height: 100vh;
+}
+
+.about-us h2 {
+  font-family: "edo", sans-serif;
+  color: white;
+  font-size: 4em;
+  line-height: 1em;
+  text-align: center;
+  padding: 1rem 0rem;
+  background-color: #312f2f;
+  box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
+}
 
 .containerabout {
   display: flex;
   flex-direction: row;
-  height: auto;
   align-items: center;
 }
 
 .photoabout {
-  height: 10em;
 
-  background-image: url(./image_review/femme4.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50vw;
+  height: 100vh;
+
+
+  background-image: url(./img/usbis.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 40vw;
 }
 
 .textabout {
-  width: 50vw;
+  width: 60vw;
 }
 
 /*Beer preseantation Media Queries 1280px*/
+
+
 @media screen and (min-width: 1280px) {
   .beer-presentation {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row-reverse;
+    flex-direction: row;
     max-width: 100vw;
+
+
+  }
+
+  .beer-presentation div h2 {
+    width: 100%;
+    text-align: center;
   }
 
   .beer-presentation article {
@@ -1194,6 +1447,7 @@ footer input::placeholder {
     align-items: center;
     box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
     width: 25vw;
+
   }
 
   .beer-presentation .wild-fox p {
@@ -1218,33 +1472,20 @@ footer input::placeholder {
   .beer-presentation div {
     height: 70vh;
     width: 15vw;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.267);
-  }
-
-  .h33 {
     display: flex;
-    padding-top: 3rem;
     justify-content: center;
-    align-items: center;
-    position: fixed;
-  }
-
-  .h33 h3 {
-    font-size: 5rem;
-    font-family: "Quicksand", sans-serif;
+    background-color: rgba(255, 255, 255, 0.124);
   }
 
   .beer-presentation div p {
     color: rgb(255, 255, 255);
     line-height: 1.5rem;
-    padding-right: 1.5rem;
     height: 50vh;
     font-size: 1.2rem;
-    text-align: justify;
+    font-weight: bold;
     width: 9.5vw;
     font: color white;
-    text-shadow: 1px 1px 0 #969696, 1px 1px 1px #aba8a8;
+
   }
 
   .beer-presentation .turtle-img-pres {
@@ -1293,12 +1534,12 @@ footer input::placeholder {
   }
 }
 
+
 /*QUIZZ*/
 
 
 .quizz {
   height: 100vh;
-  background: #f1f1f1;
   display: flex;
   align-items: center;
 }
@@ -1310,7 +1551,7 @@ footer input::placeholder {
   display: flex;
   flex-direction: column;
   height: 80vh;
-  width: 70vw;
+  width: 65vw;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1343,8 +1584,9 @@ h3 {
 }
 
 .end-screen img {
+  margin-top: 4em;
   max-width: 8vw;
-  max-height: 15vh;
+  max-height: 30vh;
   animation: myAnimImg 1s ease 0s 1 normal forwards;
 }
 
@@ -1359,17 +1601,6 @@ h3 {
   }
 }
 
-.welcome-screen button {
-  color: rgb(52, 51, 51);
-  background: rgb(255, 255, 255);
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-weight: bold;
-  border: none;
-  margin-top: 3em;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
 
 
 .welcome-screen button,
@@ -1382,7 +1613,7 @@ h3 {
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
-  margin-top: 1em;
+  margin-top: 5em;
 }
 
 .welcome-screen button:hover,
@@ -1393,8 +1624,9 @@ h3 {
 .question-screen h2 {
 
   color: #f1f1f1;
-  background-color: #111;
-  border-radius: 2em;
+  background-color: #312f2f;
+  box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
+  border-radius: 0.2em;
   margin-bottom: 2em;
   padding: 1em;
   font-weight: bold;
@@ -1420,18 +1652,74 @@ h3 {
   margin-bottom: 1em;
   padding: 1em;
   font-weight: bold;
+  box-shadow: 10px 8px 11px 0px rgba(0, 0, 0, 0.47);
 }
 
 .question-screen li:hover {
   background: rgb(212, 171, 59);
 }
 
-/*@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;1,300&display=swap');*/
+@media screen and (max-width: 1200px) {
 
-/** {
-  font-family: 'Nunito', sans-serif;
 
-}*/
+  .welcome-screen h2,
+  h3 {
+    font-size: 2rem;
+  }
+
+  .question-screen h2 {
+
+    font-size: 1.2em;
+  }
+
+  .end-screen h2 {
+    font-size: 2rem;
+  }
+
+  .welcome-screen button,
+  .end-screen button {
+
+    font-size: 1.1rem;
+  }
+
+  .question-screen li {
+    font-size: 0.8rem;
+    margin: 0.7 1rem;
+  }
+
+  h2.question {
+    font-size: 1.1rem;
+  }
+
+  .end-screen img {
+    margin-top: 4em;
+    max-width: 16vw;
+    max-height: 30vh;
+    animation: myAnimImg 1s ease 0s 1 normal forwards;
+  }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  .containercarousel {
+    height: 400px;
+  }
+
+  .slidercarousel {
+    height: 400px;
+
+    @media screen and (min-width: 1024px) {
+      .containercarousel {
+        height: 400px;
+      }
+
+      .slidercarousel {
+        height: 400px;
+      }
+    }
+  }
+}
 
 .divbody {
   min-height: 50vh;

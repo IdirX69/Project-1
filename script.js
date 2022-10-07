@@ -131,14 +131,10 @@ setInterval(bubbleMaker, 200);
 
 //caroussel
 
-let slides = document.querySelectorAll(".slide-container");
-let index = 0;
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
 
-function next() {
-  slides[index].classList.remove("active");
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
-}
+const slider = document.querySelector(".slidercarousel");
 
 const indicatorParent = document.querySelector(".controlcarousel ul");
 const indicators = document.querySelectorAll(".controlcarousel li");
@@ -239,7 +235,7 @@ const questions = [
   {
     question: 'Ce qui vous fascine le plus lorsque vous regardez un feu dans une cheminée :',
     answers: [{
-      title: "La chaleur qui s'en dégage.",
+      title: "La chaleur qui s'en dégage",
       house: 'WildPanda'
     }, {
       title: 'La couleur des flammes et leurs mille nuances',
@@ -423,5 +419,20 @@ const displayScreen = (screenName) => {
 window.addEventListener('load', init);
 
 
+//caroussel
+
+let slides = document.querySelectorAll(".slide-container");
+let index = 0;
+
+function next() {
+  slides[index].classList.remove("active1");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active1");
+}
 
 
+function prev() {
+  slides[index].classList.remove("active");
+  index = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add("active");
+}
