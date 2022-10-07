@@ -69,8 +69,7 @@ const foxImg = document.querySelector(".fox-img-pres");
 const foxP = document.querySelector(".fox-paragraph");
 const beeImg = document.querySelector(".bee-img-pres");
 const beeP = document.querySelector(".bee-paragraph");
-
-// Resolution is 1024x768 or above
+const navBarScroll = document.querySelector("nav");
 
 if (window.matchMedia("(max-width: 1200px)").matches) {
   window.addEventListener("scroll", () => {
@@ -128,6 +127,18 @@ const bubbleMaker = () => {
 };
 setInterval(bubbleMaker, 200);
 
+let lastScrollValue = 0;
+
+document.addEventListener("scroll", () => {
+  let top = document.documentElement.scrollTop;
+  if (lastScrollValue < top) {
+    navBarScroll.classList.add("hidden");
+  } else {
+    navBarScroll.classList.remove("hidden");
+  }
+  lastScrollValue = top;
+});
+
 //Section beer presentation end
 
 //caroussel
@@ -136,13 +147,13 @@ let slides = document.querySelectorAll(".slide-container");
 let index = 0;
 
 function next() {
-    slides[index].classList.remove("active");
-    index = (index + 1) % slides.length;
-    slides[index].classList.add("active");
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
 }
 
 function prev() {
-    slides[index].classList.remove("active");
-    index = (index - 1 + slides.length) % slides.length;
-    slides[index].classList.add("active");
+  slides[index].classList.remove("active");
+  index = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add("active");
 }
